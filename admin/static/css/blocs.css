@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@font-face {
+  font-family: 'Lagoon-semi';
+  src: url('../fonts/semi/Lagoon-Md-Semi-Ext.eot');
+  src: local('☺'), url('../fonts/semi/Lagoon-Md-Semi-Ext.woff') format('woff'), url('../fonts/semi/Lagoon-Md-Semi-Ext.ttf') format('truetype'), url('../fonts/semi/Lagoon-Md-Semi-Ext.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+/*******************************************************************************************************************************************/
+/*
+/*        SQUAREMENU
+/*
+/*******************************************************************************************************************************************/
+.squareMenu {
+  position: relative;
+  width: 100%;
+  height: calc( 100% - 221px );
+}
+.squareMenu .items {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 0;
+}
+.squareMenu .items .item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  height: 315px;
+  background-color: #fff;
+  margin-right: 50px;
+  margin-bottom: 65px;
+  font-family: "Lagoon-semi";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #898989;
+  background: #ffffff no-repeat;
+  background-size: 50%;
+  background-position: 50% 25%;
+}
+.squareMenu .items .item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -30px 30px 90px #375c62;
+}
+.squareMenu .items .item a {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 210px;
+  overflow: hidden;
+  z-index: 1;
+}
+.squareMenu .items .item a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  border: 5px solid #00adbb;
+  transition: all 200ms;
+  transform: scale(1.05, 1.05);
+}
+.squareMenu .items .item a:hover:after {
+  transform: scale(1, 1);
+}
+.squareMenu .items .item b {
+  display: block;
+  font-size: 22.66px;
+  font-weight: 500;
+}
+.squareMenu .items .item.news {
+  background-image: url('../img/common/home/news_icon.png');
+}
+.squareMenu .items .item.mea {
+  background-image: url('../img/common/home/mea_icon.png');
+}
+.squareMenu .items .item.events {
+  background-image: url('../img/common/home/events_icon.png');
+}
+.squareMenu .items .item.pages {
+  background-image: url('../img/common/home/pages_icon.png');
+}
+.squareMenu .items .item.charters {
+  background-image: url('../img/common/home/charters_icon.png');
+}
+.squareMenu .items .item.users {
+  background-image: url('../img/common/home/users_icon.png');
+}
+.squareMenu .items.cols2 {
+  width: 750px;
+}
+.squareMenu .items.cols2 .item:nth-child(2n+2) {
+  margin-right: 0;
+}
+.squareMenu .items.cols2 .item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+.squareMenu .items.cols3 {
+  width: 1150px;
+}
+.squareMenu .items.cols3 .item:nth-child(3n+3) {
+  margin-right: 0;
+}
+.squareMenu .items.cols3 .item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+.squareMenu .items.cols4 {
+  width: 1550px;
+}
+.squareMenu .items.cols4 .item:nth-child(4n+4) {
+  margin-right: 0;
+}
+.squareMenu .items.cols4 .item:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+.squareMenu.fixed {
+  height: auto;
+}
+.squareMenu.fixed .items {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  margin: 65px auto;
+}
+@media screen and (max-width: 1680px) {
+  .squareMenu {
+    height: calc( 100% - 191px );
+  }
+  .squareMenu .items .item {
+    width: 305px;
+    height: 275px;
+    margin-right: 45px;
+    margin-bottom: 55px;
+    font-size: 15.75px;
+    line-height: 20px;
+  }
+  .squareMenu .items .item:before {
+    box-shadow: -26px 26px 78px #375c62;
+  }
+  .squareMenu .items .item a {
+    padding-top: 185px;
+  }
+  .squareMenu .items .item a:after {
+    border-width: 4px;
+  }
+  .squareMenu .items .item b {
+    font-size: 19.83px;
+  }
+  .squareMenu .items.cols2 {
+    width: 655px;
+  }
+  .squareMenu .items.cols3 {
+    width: 1005px;
+  }
+  .squareMenu .items.cols4 {
+    width: 1355px;
+  }
+  .squareMenu.fixed .items {
+    margin: 55px auto;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .squareMenu {
+    height: calc( 100% - 166px );
+  }
+  .squareMenu .items .item {
+    width: 265px;
+    height: 240px;
+    margin-right: 35px;
+    margin-bottom: 50px;
+    font-size: 13.5px;
+    line-height: 18px;
+  }
+  .squareMenu .items .item:before {
+    box-shadow: -22.5px 22.5px 67.5px #375c62;
+  }
+  .squareMenu .items .item a {
+    padding-top: 160px;
+  }
+  .squareMenu .items .item a:after {
+    border-width: 3px;
+  }
+  .squareMenu .items .item b {
+    font-size: 17px;
+  }
+  .squareMenu .items.cols2 {
+    width: 565px;
+  }
+  .squareMenu .items.cols3 {
+    width: 865px;
+  }
+  .squareMenu .items.cols4 {
+    width: 1165px;
+  }
+  .squareMenu.fixed .items {
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .squareMenu {
+    height: calc( 100% - 148px );
+  }
+  .squareMenu .items .item {
+    width: 230px;
+    height: 210px;
+    margin-right: 30px;
+    margin-bottom: 45px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .squareMenu .items .item:before {
+    box-shadow: -20px 20px 60px #375c62;
+  }
+  .squareMenu .items .item a {
+    padding-top: 140px;
+  }
+  .squareMenu .items .item b {
+    font-size: 15px;
+  }
+  .squareMenu .items.cols2 {
+    width: 490px;
+  }
+  .squareMenu .items.cols3 {
+    width: 750px;
+  }
+  .squareMenu .items.cols4 {
+    width: 1100px;
+  }
+  .squareMenu.fixed .items {
+    margin: 45px auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .squareMenu {
+    height: calc( 100% - 119px );
+  }
+  .squareMenu .items .item {
+    width: 190px;
+    height: 170px;
+    margin-right: 25px;
+    margin-bottom: 35px;
+    font-size: 9.5px;
+    line-height: 13px;
+  }
+  .squareMenu .items .item:before {
+    box-shadow: -20px 20px 60px #375c62;
+  }
+  .squareMenu .items .item a {
+    padding-top: 110px;
+  }
+  .squareMenu .items .item a:after {
+    top: -2px;
+    left: -2px;
+    border-width: 2px;
+  }
+  .squareMenu .items .item b {
+    font-size: 12px;
+  }
+  .squareMenu .items.cols2 {
+    width: 405px;
+  }
+  .squareMenu .items.cols3 {
+    width: 620px;
+  }
+  .squareMenu .items.cols4 {
+    width: 835px;
+  }
+  .squareMenu.fixed .items {
+    margin: 35px auto;
+  }
+}
+/*******************************************************************************************************************************************/
+/*
+/*        LATERAL LIST
+/*
+/*******************************************************************************************************************************************/
+.lateralList {
+  position: relative;
+  font-size: 0;
+  font-family: "Open sans";
+}
+.lateralList .list {
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+}
+.lateralList .list .title {
+  color: #000;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.lateralList .list .title:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #91adb4;
+  margin-top: 20px;
+}
+.lateralList .list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lateralList .list ul li {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+  opacity: .5;
+  background-color: #69949e;
+  color: #fff;
+}
+.lateralList .list ul li.active,
+.lateralList .list ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 60px;
+  padding-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lateralList .list ul li.active {
+  background-color: #fff;
+  color: #00adbb;
+  opacity: 1;
+}
+.lateralList .list ul li:hover {
+  opacity: 1;
+}
+.lateralList .list ul li:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 10px;
+  top: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.lateralList .list ul li.folder:before {
+  background-image: url('../img/common/folder-icon-white.png');
+}
+.lateralList .list ul li.active.folder:before {
+  background-image: url('../img/common/folder-icon-on.png');
+}
+.lateralList .content {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 390px);
+  margin-left: 40px;
+}
+.lateralList .content .breadcrum {
+  margin-top: 30px;
+  color: #555;
+  font-size: 12px;
+}
+.lateralList .content .breadcrum a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.lateralList .content .title {
+  position: relative;
+  padding-left: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.lateralList .content .title:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.lateralList .content .title.folder:before {
+  background-image: url('../img/common/folder-title.png');
+}
+.lateralList .content .folders {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  padding-right: 10px;
+}
+.lateralList .content .folders .folder {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(25% - 30px);
+  height: 215px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.lateralList .content .folders .folder:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -15px 15px 60px #375c62;
+  opacity: .5;
+}
+.lateralList .content .folders .folder a {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.lateralList .content .folders .folder a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 5px solid #00adbb;
+  transition: all 200ms;
+  transform: scale(1.1, 1.1);
+}
+.lateralList .content .folders .folder a:hover:after {
+  transform: scale(1, 1);
+}
+.lateralList .content .folders .folder .label {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.lateralList .content .folders .folder .count {
+  margin: 40px auto 35px;
+  width: 100px;
+  height: 85px;
+  line-height: 85px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url('../img/common/folder-bloc.png');
+  text-align: center;
+  padding-top: 10px;
+  color: #FFF;
+  font-size: 30px;
+}
+.lateralList .content .folders .folder.grey .count {
+  background-image: url('../img/common/folder-bloc-grey.png');
+}
+@media screen and (max-width: 1680px) {
+  .lateralList bgc .list {
+    width: 310px;
+    padding: 10px;
+  }
+  .lateralList bgc .list .title {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .lateralList bgc .list .title:after {
+    height: 4px;
+    margin-top: 20px;
+  }
+  .lateralList bgc .list ul li {
+    height: 44px;
+    line-height: 44px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .lateralList bgc .list ul li.active,
+  .lateralList bgc .list ul li a {
+    padding-left: 60px;
+  }
+  .lateralList bgc .list ul li:before {
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 2px;
+  }
+  .lateralList .content {
+    width: calc(100% - 390px);
+    margin-left: 40px;
+  }
+  .lateralList .content .breadcrum {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  .lateralList .content .title {
+    padding-left: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .lateralList .content .title:before {
+    width: 60px;
+    height: 50px;
+  }
+  .lateralList .content .folders {
+    padding-right: 10px;
+  }
+  .lateralList .content .folders .folder {
+    width: calc(25% - 30px);
+    height: 215px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .lateralList .content .folders .folder:before {
+    box-shadow: -15px 15px 60px #375c62;
+  }
+  .lateralList .content .folders .folder a:after {
+    border: 5px solid #00adbb;
+  }
+  .lateralList .content .folders .folder .label {
+    font-size: 18px;
+  }
+  .lateralList .content .folders .folder .count {
+    margin: 40px auto 35px;
+    width: 100px;
+    height: 85px;
+    line-height: 85px;
+    padding-top: 10px;
+    font-size: 30px;
+  }
+}

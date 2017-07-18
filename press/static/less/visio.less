@@ -1,0 +1,214 @@
+@import "varables.less";
+
+#visio {
+	position: absolute;
+	top: 162px; left: 0;
+	width: 100%; height: auto;
+	z-index: 20;	
+
+	-webkit-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	        transform: translateY(-100%);
+
+	-webkit-transition: -webkit-transform 400ms @easeOutQuart;
+	transition: -webkit-transform 400ms @easeOutQuart;
+	transition: transform 400ms @easeOutQuart;
+	transition: transform 400ms @easeOutQuart, -webkit-transform 400ms @easeOutQuart;
+	
+	@media screen and (min-width: 1441px){ top: 162px * @ratio1680; }
+	@media screen and (min-width: 1681px){ top: 162px * @ratio1920; }
+	@media screen and (max-width: 1280px){ top: 162px * @ratio1280; }
+	@media screen and (max-width: 1024px){ top: 120px;}
+	@media screen and (max-width: 760px){ top: 80px; }
+	
+	.toggleBtn {
+		position: absolute;
+		width: 60px; height: 60px;
+		top: 100%; 
+		right: 0px;
+		cursor: pointer;
+		z-index: 5;
+
+		background: url('../img/common/folder-images.svg') center no-repeat #292929;
+		background-size: 50%;
+	}
+	
+	.content {
+		position: relative;
+		height: auto;
+		z-index: 1;
+		background-color: #393939;	
+	}
+
+	&.opened {
+		-webkit-transform: translateY(0);
+			    -ms-transform: translateY(0);
+			        transform: translateY(0);
+		.toggleBtn {
+			top: 0;
+			background-image: url('../img/common/cross.svg');
+		}
+	}
+	
+	.content {
+		position: relative;
+		min-height: 182px;
+		background-color: #353535;
+		overflow: hidden;
+		padding-right: 60px;
+
+		.trashBtn {
+			position: absolute;
+			width: 60px; right: 0;
+			bottom: 0; height: 60px;
+			background: url('../img/common/trash.svg') center no-repeat #292929;
+			background-size: 40%;			
+			cursor: pointer;
+		}
+
+		.downloadBtn {
+			position: absolute;
+			width: 60px; right: 0;
+			bottom: 61px; height: 60px;
+			background: url('../img/common/download.svg') center no-repeat #292929;
+			background-size: 40%;			
+			cursor: pointer;
+		}
+
+		.medias {
+			position: relative;
+			width: 100%; max-height: 600px;
+			font-size: 0; height: auto;
+			background-color: #393939;
+			overflow: auto;
+
+			.media {
+				position: relative;
+				display: inline-block;
+				width: 25%; height: 300px;
+				border-right: 1px solid #666;
+				border-bottom: 1px solid #666;
+				padding: 20px;
+				font-family: @font-lagoon-semi;
+				text-align: center;
+				overflow: hidden;
+
+				.visu {
+					position: relative;
+					height: 180px; width: 240px;
+					max-width: 100%;
+					margin: 10px auto;
+					overflow: hidden;
+
+					img {
+						position: relative;
+						display: block;
+						top: 50%; left: 50%;
+						-webkit-transform: translate(-50%, -54%);
+						    -ms-transform: translate(-50%, -54%);
+						        transform: translate(-50%, -54%);
+						max-width: 100%; 
+					}					
+				}
+
+				.title {
+					text-transform: uppercase;
+					font-size: 10px; line-height: 25px;
+					color: #FFF;
+				}
+
+				.name {
+					line-height: 15px;
+					font-size: 9px; 
+					color: #b2b2b2
+				}
+
+				.removeBtn {
+					position: absolute;
+					right: 0; top: 0;
+					width: 30px; height: 30px;
+					cursor: pointer;
+					-webkit-transform: translateY(-100%);
+					    -ms-transform: translateY(-100%);
+					        transform: translateY(-100%);
+
+					        -webkit-transition: -webkit-transform 300ms;
+
+					        transition: -webkit-transform 300ms;
+
+					        transition: transform 300ms;
+
+					        transition: transform 300ms, -webkit-transform 300ms;
+
+					&:before, &:after {
+						content: "";
+						position: absolute;
+						left: 5px; top: 14px;
+						width: 15px; height: 2px;
+						background-color: #fff;
+						-webkit-transform: rotate(45deg);
+						    -ms-transform: rotate(45deg);
+						        transform: rotate(45deg);
+					}
+
+					&:after {
+						-webkit-transform: rotate(-45deg);
+						    -ms-transform: rotate(-45deg);
+						        transform: rotate(-45deg);
+					}
+				}
+
+				&.over {
+					.removeBtn {
+						-webkit-transform: translateY(0);
+						    -ms-transform: translateY(0);
+						        transform: translateY(0);
+					}
+				}
+
+			}
+		}
+	}
+
+	.touch & {
+		.content {
+			.medias {
+				.media {
+					.removeBtn {
+						-webkit-transform: translateY(0);
+						    -ms-transform: translateY(0);
+						        transform: translateY(0);
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1441px){ 
+		.content {
+			.medias {
+				.media {
+					width: 20%;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1024px){ 
+		.content {
+			.medias {
+				.media {
+					height: 250px;
+					width: 100% / 3;
+
+					.visu { height: 140px;}
+				}
+			}
+		}
+	}
+
+	.touch & {
+		display: none;
+	}
+
+}

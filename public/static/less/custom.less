@@ -1,0 +1,230 @@
+@import "main.less";
+@import "general.less";
+@import "fullImage_text.less";
+
+.custom {
+	position: relative;
+	.content{
+		
+		.text {
+			text-align: center;
+			.title {
+				font-weight: 400;
+				line-height: 25px;
+				.size {
+					font-size: 25px;
+					display: block;
+				}
+			}
+			.cta.pdf {
+				position: relative;
+				padding-top: 50px;
+				
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0; left: 50%;
+					margin-left: -20px;
+					width: 40px; height: 40px;
+					background: url('../img/common/pdf-icon.png') center no-repeat;
+					background-size: 100%;
+				}
+				&:after {
+					background-color: #000;
+				}
+			}
+		}
+	}
+
+	.intro {
+		position: relative;
+		.bg {
+			position: absolute;
+			width: 100%; height: 100%;
+			top: 0; left: 0;
+			overflow: hidden;
+		}
+		.content {
+			max-width: 1560px / 2;
+			margin: 0 auto;
+			line-height: 520px;
+			padding: 40px;
+
+			.text {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				text-align: center;
+				color: #9c0101;				
+				
+				.bigTitle {
+					font-family: @font-lagoon-semi;
+					font-size: 40px;
+					margin-bottom: 30px;
+					text-transform: uppercase;	
+				}
+				.title {
+					font-weight: 400;
+					line-height: 25px;
+					color: #9c0101;
+				}
+
+				.cta{
+					margin-top: 40px;
+					&:after {
+						background-color: #9c0101;
+					}
+				}
+			}
+		}
+	}
+	
+	@media screen and (min-width: 1441px){
+		.content{
+			.text {
+				.title {
+					line-height: 25px * @ratio1680;
+					.size {
+						font-size: 25px * @ratio1680;
+					}
+				}
+				.cta.pdf {
+					padding-top: 50px * @ratio1680;
+					&:before {
+						margin-left: -20px * @ratio1680;
+						width: 40px * @ratio1680; height: 40px * @ratio1680;						
+					}
+				}
+			}
+		}
+		.intro {
+			.content {
+				max-width: 1560px * @ratio1680 / 2;
+				line-height: 520px * @ratio1680;
+
+				.text {
+					.bigTitle {
+						line-height: 36px  * @ratio1680;
+						font-size: 40px * @ratio1680;
+						margin-bottom: 30px * @ratio1680;
+					}
+					.title {
+						line-height: 25px * @ratio1680;
+					}					
+					.cta {
+						margin-top: 40px * @ratio1680;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1681px){
+		.content{
+			.text {
+				.title {
+					line-height: 25px * @ratio1920;
+					.size {
+						font-size: 25px * @ratio1920;
+					}
+				}
+				.cta.pdf {
+					padding-top: 50px * @ratio1920;
+					&:before {
+						margin-left: -20px * @ratio1920;
+						width: 40px * @ratio1920; height: 40px * @ratio1920;						
+					}
+				}
+			}
+		}
+		.intro {
+			.content {
+				max-width: 1560px * @ratio1920 / 2;
+				line-height: 520px * @ratio1920;
+
+				.text {
+					.bigTitle {
+						line-height: 36px  * @ratio1920;
+						font-size: 40px * @ratio1920;
+						margin-bottom: 30px * @ratio1920;
+					}
+					.title {
+						line-height: 25px * @ratio1920;
+					}					
+					.cta {
+						margin-top: 40px * @ratio1920;
+					}
+				}
+			}
+		}
+	}
+	
+	@media screen and (max-width: 1280px){
+		.content{
+			.text {
+				.title {
+					line-height: 25px * @ratio1280;
+					.size {
+						font-size: 25px * @ratio1280;
+					}
+				}
+				.cta.pdf {
+					padding-top: 50px * @ratio1280;
+					&:before {
+						margin-left: -20px * @ratio1280;
+						width: 40px * @ratio1280; height: 40px * @ratio1280;						
+					}
+				}
+			}
+		}
+
+		.intro {
+			.content {
+				max-width: 1560px * @ratio1280 / 2;
+				line-height: 520px * @ratio1280;
+
+				.text {
+					.bigTitle {
+						line-height: 36px  * @ratio1280;
+						font-size: 40px * @ratio1280;
+						margin-bottom: 30px * @ratio1280;
+					}
+					.title {
+						line-height: 25px * @ratio1280;
+					}					
+					.cta {
+						margin-top: 40px * @ratio1280;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1024px){
+
+		.fullImage_text{
+			border-top: 1px solid #ccc;
+		}
+		.bg {
+			border-bottom: 1px solid #EEE;
+		}
+
+		.intro { height: auto; }
+	}
+	@media screen and (max-width: 600px){	
+
+		.intro {
+			height: auto;
+			.content {
+				padding: 40px 20px;
+
+				.text {
+					.bigTitle {
+						margin-top: 0;
+					}			
+				}
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,193 @@
+@import "main.less";
+@import "general.less";
+@import "general-club.less";
+
+.club_configs {
+
+	.myConfigs {
+		position: relative;
+		height: auto; width: 100%; 
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 60px;
+
+		.config {
+			position: relative;
+			display: inline-block;
+			width: 525px / 2;
+			height: 475px / 2;
+			background-color: #fff;
+			margin: 25px;
+			cursor: pointer;
+			text-align: center;
+
+			&:before { 
+		        content: "";
+		        display: block;
+		        position: absolute;
+		        z-index: -1;
+		        width: 100%; height: 100%;
+		        left: 50%; top:50%;
+		        transform: translate(-50%, -50%);
+		        box-shadow: -22.5px 22.5px 67.5px #375c62;
+		        opacity: .8;
+		    }     
+
+			.close {
+				position: absolute;
+				width: 40px; height: 40px;
+				right: 0; top: 0;
+				background-color: #00adbb;
+
+				&:before, &:after {
+					content:"";
+					position: absolute;
+					left: 50%; top: 50%;
+					width: 20px; margin-left: -10px;
+					height: 2px; margin-top: -1px;
+					background-color: #fff;
+					-webkit-transition: all 400ms @easeOutQuart;
+					transition: all 400ms @easeOutQuart;
+				}
+
+				&:before {
+					-webkit-transform: rotate(-45deg);
+					    -ms-transform: rotate(-45deg);
+					        transform: rotate(-45deg);
+				}
+
+				&:after {
+					-webkit-transform: rotate(45deg);
+					    -ms-transform: rotate(45deg);
+					        transform: rotate(45deg);
+				}
+
+				&.over {
+					background-color: #444;
+					&:before {
+						-webkit-transform: rotate(225deg);
+						    -ms-transform: rotate(225deg);
+						        transform: rotate(225deg);
+					}
+
+					&:after {
+						-webkit-transform: rotate(135deg);
+						    -ms-transform: rotate(135deg);
+						        transform: rotate(135deg);
+					}
+				}
+			}
+			
+			.picture {
+				position: relative;
+				left: 0; top: 0;
+				width: 100%; height: 350px / 2;
+			}
+
+			.text {
+				font-family: @font-lagoon-semi;
+				color: #8a8a88;
+				font-size: 14px;
+			}
+
+			&.over {
+
+				&:before {
+					opacity: 1;
+				}
+				
+				.text {
+					color: #00adbb
+				}
+			}
+		}
+
+		@media screen and (min-width: 1441px){
+			padding-top: 20px * @ratio1680;
+			padding-bottom: 60px * @ratio1680;
+
+			.config {
+				width: 525px * @ratio1680 / 2;
+				height: 475px * @ratio1680 / 2;
+				margin: 25px * @ratio1680;
+
+				&:before { 
+			        box-shadow: -22.5px * @ratio1680 22.5px * @ratio1680 67.5px * @ratio1680 #375c62;
+			    }     
+
+				.close {
+					width: 40px * @ratio1680; height: 40px * @ratio1680;
+
+					&:before, &:after { width: 20px * @ratio1680; margin-left: -10px * @ratio1680;}
+				}
+				
+				.picture { height: 350px * @ratio1680 / 2;}
+
+				.text { font-size: 14px * @ratio1680; }
+			}
+		}
+
+		@media screen and (min-width: 1681px){
+			padding-top: 20px * @ratio1920;
+			padding-bottom: 60px * @ratio1920;
+
+			.config {
+				width: 525px * @ratio1920 / 2;
+				height: 475px * @ratio1920 / 2;
+				margin: 25px * @ratio1920;
+
+				&:before { 
+			        box-shadow: -22.5px * @ratio1920 22.5px * @ratio1920 67.5px * @ratio1920 #375c62;
+			    }     
+
+				.close {
+					width: 40px * @ratio1920; height: 40px * @ratio1920;
+
+					&:before, &:after { width: 20px * @ratio1920; margin-left: -10px * @ratio1920;}
+				}
+				
+				.picture { height: 350px * @ratio1920 / 2;}
+
+				.text { font-size: 14px * @ratio1920; }
+			}
+		}
+		
+		@media screen and (max-width: 1280px){
+			padding-top: 20px * @ratio1280;
+			padding-bottom: 60px * @ratio1280;
+
+			.config {
+				width: 525px * @ratio1280 / 2;
+				height: 475px * @ratio1280 / 2;
+				margin: 25px * @ratio1280;
+
+				&:before { 
+			        box-shadow: -22.5px * @ratio1280 22.5px * @ratio1280 67.5px * @ratio1280 #375c62;
+			    }     
+
+				.close {
+					width: 40px * @ratio1280; height: 40px * @ratio1280;
+
+					&:before, &:after { width: 20px * @ratio1280; margin-left: -10px * @ratio1280;}
+				}
+				
+				.picture { height: 350px * @ratio1280 / 2;}
+
+				.text { font-size: 14px * @ratio1280; }
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+@import "folder.less";
+
+.introBloc {
+	background-color: #f0f0f0;
+	height: 200px;
+	line-height: 200px;
+
+	.bg {
+		opacity: 1;
+	}
+
+	.content {
+
+		.text {
+			
+			.title {
+				color: #000;
+				font-size: 20px;
+				line-height: 35px;
+
+
+				strong {
+					display: block;
+					font-weight: inherit;
+					font-size: 35px;
+					&:before, &:after {
+						content: "\“";
+						
+					}
+				}
+			}
+
+			.desc {
+				color: #000;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1441px){
+		height: 200px * @ratio1680;
+		line-height: 200px * @ratio1680;
+
+		.content {
+			.text {
+				
+				.title {
+					font-size: 20px * @ratio1680;
+					line-height: 35px * @ratio1680;
+					strong {
+						font-size: 35px * @ratio1680;
+					}
+				}
+			}
+		}
+	}
+
+    @media screen and (min-width: 1681px){
+		height: 200px * @ratio1920;
+		line-height: 200px * @ratio1920;
+
+		.content {
+			.text {				
+				.title {
+					font-size: 20px * @ratio1920;
+					line-height: 35px * @ratio1920;
+					strong {
+						font-size: 35px * @ratio1920;
+					}
+				}
+			}
+		}
+    }
+
+	@media screen and (max-width: 1280px){
+		height: 200px * @ratio1280;
+		line-height: 200px * @ratio1280;
+
+		.content {
+			.text {				
+				.title {
+					font-size: 20px * @ratio1280;
+					line-height: 35px * @ratio1280;
+					strong {
+						font-size: 35px * @ratio1280;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 700px){
+		height: 150px;
+		line-height: 150px;
+
+		.content {
+			.text {				
+				.title {
+					font-size: 14px;
+					line-height: 22px;
+					strong {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+}

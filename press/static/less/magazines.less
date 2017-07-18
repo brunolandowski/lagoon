@@ -1,0 +1,367 @@
+@import "main.less";
+@import "general.less";
+@import "newsletterForm.less";
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#currentMagazine{
+	padding: 105px 70px;
+	background-color: #fff;
+
+	.content {
+		position: relative;
+		width: 100%; height: 100%;
+		background-image: url('../img/home/magazine.jpg');
+    	padding: 0 100px;
+    	line-height: 390px;
+	
+		.text {
+        	position: relative;
+        	display: inline-block;
+        	vertical-align: middle;
+        	width: 350px;
+        	text-align: left;
+        	color: #000;
+
+        	.desc {
+				margin: 0 auto;		
+        		max-width: 660px;
+        	}
+
+        	.cta {
+
+        		&:after {
+        			margin: 8px 0;
+        			background-color: #000; 
+        		}
+        	}
+        }
+    }
+
+    .couv {
+    	position: absolute;
+    	top: 50%; left: 70%;
+    	width: 330px; height: 480px;
+    	-ms-transform: translate(-50%,-50%);
+    	-webkit-transform: translate(-50%,-50%);
+    	        transform: translate(-50%,-50%);
+
+    	&:after {
+    		content: "";
+    		position: absolute;
+    		left: -10px; top: -10px; right: -10px; bottom: -10px;
+    		border: 2px solid #a0968b;
+    	}
+    }
+
+    
+	@media screen and (min-width:1441px) {
+    	padding: 105px * @ratio1680 70px * @ratio1680;
+
+		.content {
+			padding: 0 100px * @ratio1680;
+	    	line-height: 390px * @ratio1680;
+		
+			.text {
+	        	width: 350px * @ratio1680;
+	        	.desc {
+					max-width: 660px * @ratio1680;
+	        	}
+
+	        	.cta {
+	        		&:after {
+	        			margin: 8px * @ratio1680 0;
+	        		}
+	        	}
+	        }
+        }
+
+        .couv {
+        	width: 330px * @ratio1680; height: 480px * @ratio1680;
+        	
+        	&:after {
+	    		left: -10px * @ratio1680; top: -10px * @ratio1680; right: -10px * @ratio1680; bottom: -10px * @ratio1680;
+	    	}
+        }
+	}
+
+	@media screen and (min-width:1681px) {
+    	padding: 105px * @ratio1920 70px * @ratio1920;
+
+		.content {
+			padding: 0 100px * @ratio1920;
+	    	line-height: 390px * @ratio1920;
+		
+			.text {
+	        	width: 350px * @ratio1920;
+	        	.desc {
+					max-width: 660px * @ratio1920;
+	        	}
+
+	        	.cta {
+	        		&:after {
+	        			margin: 8px * @ratio1920 0;
+	        		}
+	        	}
+	        }
+        }
+
+        .couv {
+        	width: 330px * @ratio1920; height: 480px * @ratio1920;
+        	
+        	&:after {
+	    		left: -10px * @ratio1920; top: -10px * @ratio1920; right: -10px * @ratio1920; bottom: -10px * @ratio1920;
+	    	}
+        }
+	}
+
+	@media screen and (max-width: 1280px){ 
+    	padding: 105px * @ratio1280 70px * @ratio1280;
+
+		.content {
+			padding: 0 100px * @ratio1280;
+	    	line-height: 390px * @ratio1280;
+		
+			.text {
+	        	width: 350px * @ratio1280;
+	        	.desc {
+					max-width: 660px * @ratio1280;
+	        	}
+
+	        	.cta {
+	        		&:after {
+	        			margin: 8px * @ratio1280 0;
+	        		}
+	        	}
+	        }
+        }
+
+        .couv {
+        	width: 330px * @ratio1280; height: 480px * @ratio1280;
+        	
+        	&:after {
+	    		left: -10px * @ratio1280; top: -10px * @ratio1280; right: -10px * @ratio1280; bottom: -10px * @ratio1280;
+	    	}
+        }
+	}
+
+	@media screen and (max-width: 1010px){
+		padding: 105px * @ratio1280 0;
+		height: auto;
+
+		.content {
+			padding: 40px;
+			line-height: 390px * @ratio1280 - 80px;
+
+			.text {
+				max-width: calc(~"100% - "330px * @ratio1280 + 80px + 40px );
+			}
+		}
+
+		.couv {
+        	left: auto; right: 80px;
+        	-ms-transform: translate( 0,-50%);
+    	-webkit-transform: translate( 0,-50%);
+    	        transform: translate( 0,-50%);
+        }
+	}
+	
+	 @media screen and (max-width: 800px){
+		
+		padding: 0;
+
+	 	.content {
+			padding: 40px 20px;
+			line-height: 390px * @ratio1280 - 80px;
+
+			.text {
+				width: auto;
+				max-width: calc(~"100% - 200px - 80px");
+			}
+		}
+
+		.couv {
+			right: 30px;
+        	width: 200px; height:  290px;
+        }
+	 }
+
+	 @media screen and (max-width: 560px){
+		
+		padding: 0;
+
+	 	.content {
+			padding: 40px 20px;
+			padding-top: 350px;
+
+			.text {
+				width: 100%; 
+				max-width: 100%;
+				text-align: center;
+
+				.cta {
+	        		&:after {
+	        			margin: 8px * @ratio1280 auto;
+	        		}
+	        	}
+			}
+		}
+
+		.couv {
+			top: 40px;
+			left: 50%; right: auto;
+			margin-left: -100px;
+			-ms-transform: translate( 0,0);
+    	-webkit-transform: translate( 0,0);
+    	        transform: translate( 0,0);
+			right: 30px;
+        	width: 200px; height:  290px;
+        }
+	 }
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.oldVersions {
+	position: relative;
+	font-size: 0;
+	height: auto;
+	padding: 10px;
+
+	.mag {
+		position: relative;
+		display: inline-block;
+		width: calc( ~"100% / 6 - 20px"); 
+		margin: 10px;
+		border: 1px solid #DDD;
+		text-align: center;
+		overflow: hidden;
+		
+		.visu {
+			position: relative;
+			width: 100%;
+			background-color: #efefef;
+			padding: 20px;
+			-webkit-transition: background-color 200ms; 
+                transition: background-color 200ms;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.cta {
+            position: absolute;
+            bottom: 0; width: 100%;
+            background-color:rgba(255,255,255,.8);
+            text-transform: uppercase;
+            font-family: @font-lagoon;
+            font-weight: 700;
+            font-size: 10px; line-height: 40px;
+            -webkit-transition: all 200ms; 
+                transition: all 200ms;
+
+             -webkit-transform: translateY(100%);
+                 -ms-transform: translateY(100%);
+                     transform: translateY(100%);
+        }
+
+        .btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 20px; height: 20px;
+			line-height: 20px;
+			text-align: center;
+			border-radius: 3px;
+			background-color: #00ADBB;
+			cursor: pointer;
+			color: #fff;
+			font-size: 14px;
+			-webkit-transform: translateX(40px);
+			    -ms-transform: translateX(40px);
+			        transform: translateX(40px);
+
+			-webkit-transition: all 200ms;
+			transition: all 200ms;
+
+			&.addVisio {
+				background: url('../img/common/squared-plus.svg') center no-repeat #00adbb;
+				background-size: 70%;
+			}
+
+			&.over{ background-color: #333; };
+		}
+
+        &.over {
+			border: 1px solid #999;
+			.visu {
+				background-color: #fff;
+			}	
+
+        	.cta {
+            	-webkit-transform: translateY(0);
+                 -ms-transform: translateY(0);
+                     transform: translateY(0);
+            }
+
+            .btn.addVisio {
+            	-webkit-transform: translateX(0);
+                 -ms-transform: translateX(0);
+                     transform: translateX(0);
+            }
+        }
+	}
+
+	@media screen and (max-width: 1280px) {
+		.mag {
+			width: calc( ~"100% / 5 - 20px"); 
+		}
+	}
+
+	@media screen and (max-width: 960px) {
+		.mag {
+			width: calc( ~"100% / 4 - 20px"); 
+		}
+	}
+
+	@media screen and (max-width: 760px) {
+		.mag {
+			width: calc( ~"100% / 4 - 10px"); 
+			margin: 5px;
+		}
+	}
+
+	@media screen and (max-width: 680px) {
+		.mag {
+			width: calc( ~"100% / 3 - 10px"); 
+			margin: 5px;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		.mag {
+			width: calc( ~"100% / 2 - 10px"); 
+			margin: 5px;
+		}
+	}
+
+	@media screen and (max-width: 380px) {
+		.mag {
+			width: calc( ~"100%  - 10px"); 
+			margin: 5px;
+		}
+	}
+}
+
+
+
+
+

@@ -1,0 +1,189 @@
+@import "variables.less";
+
+#zoomSlider {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%; 
+	background-color: rgba(0,0,0,.5);
+	z-index: 200;
+	display: none;
+
+	.bloc {
+		position: absolute;
+		left: 50%; top: 50%;
+		width: calc( ~"100% - 160px" );
+		height: calc( ~"100% - 160px" );
+		background-color: #fff;
+		box-shadow: 0 0 20px rgba(0,0,0,.5);
+
+		-webkit-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+		
+		.close {
+			position: absolute;
+			right: 30px; top: 30px;
+			width: 20px; height: 20px;
+			cursor: pointer;
+			z-index: 2;
+
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				top: 50%; left: 0;
+				width: 100%; height: 3px;
+				background-color: #000;
+				-webkit-transition: all 300ms @easeOutQuad;
+				transition: all 300ms @easeOutQuad;
+			}
+
+			&:before { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+			&:after { -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transition-delay: 100ms; transition-delay: 100ms; }
+
+			&.over:before { -webkit-transform: rotate(225deg); -ms-transform: rotate(225deg); transform: rotate(225deg); }
+			&.over:after { -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); }
+		}
+
+		.title {
+			position: relative;
+			width: 100%; 
+			height: 80px; line-height: 80px;
+			padding: 0 80px;
+
+			text-transform: uppercase;
+    		font-family: @font-lagoon-ext;
+    		text-align: center;
+    		font-weight: 400;
+			font-size: 15px;
+    		color: #00adbb;
+		}
+
+		.slider {
+			position: relative;
+			//width: calc( ~"100% - 160px" );
+			width: 100%;
+			height: calc( ~"100% - 80px" );
+			margin: 0 auto;
+			overflow: hidden;
+
+			.slide {
+				position: absolute;
+				top: 0;
+				width: 100%; height: 100%;
+
+				.visu {
+					position: absolute;
+					top: 0; left: 0;
+					width: 100%; height: calc( ~"100% - 80px");
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-color: #f4f4f4;
+				}
+
+				&:nth-child(odd) {
+					.visu { background-color: #f0f0f0; }
+				}
+
+				.legend {
+					position: absolute;
+					left: 0; width: 100%;
+					bottom: 40px;
+					-webkit-transform: translateY(50%);
+					    -ms-transform: translateY(50%);
+					        transform: translateY(50%);
+					font-family: @font-lagoon-semi;
+					text-align: center;
+					color: #000;
+		    		font-weight: 400;
+		    		font-size: 10px;
+		    		line-height: 20px;
+
+				}
+			}
+		}
+
+		.arrow {
+	    	position: absolute;
+	    	width: 40px; height: 40px;
+	    	border-radius: 40px;
+	    	top: 50%; margin-top: -20px;	 
+	    	overflow: hidden;   	
+			cursor: pointer;
+			border: 2px solid #ccc;
+			background-color: #fff;
+
+			-webkit-transition: all 200ms @easeOutQuart;
+				-webkit-transition: all 400ms @easeOutQuart;
+				transition: all 400ms @easeOutQuart;
+			
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				left: 0; top: 0;
+				width: 100%; height: 100%;
+				background-image: url('../img/common/slider_arrow.png');
+				background-size: 100%;
+				background-position: center;
+				-webkit-transition: all 200ms @easeOutQuart;
+				-webkit-transition: all 400ms @easeOutQuart;
+				transition: all 400ms @easeOutQuart;
+			}
+
+			&:after { left: -100%; }
+
+			&.over:before, &.over:after {
+				-webkit-transform: translateX(100%);
+				    -ms-transform: translateX(100%);
+				        transform: translateX(100%);
+			}
+
+			&.right { 
+				right: 20px; 
+				-webkit-transform: rotateZ(0); 
+					-ms-transform: rotate(0); 
+						transform: rotateZ(0);}
+			&.left { 
+				left: 20px; 
+				-webkit-transform: scale(-1, 1); 
+				    -ms-transform: scale(-1, 1); 
+				        transform: scale(-1, 1);
+			}
+	    }
+	}
+
+	@media screen and (max-width: 890px) {
+		.bloc {
+			width: calc( ~"100% - 80px" );
+			height: calc( ~"100% - 80px" );
+			
+			.close {
+				position: absolute;
+				right: 30px; top: 30px;
+				width: 20px; height: 20px;
+				cursor: pointer;
+				z-index: 2;
+			}
+
+			.title {
+				height: 80px; line-height: 80px;
+				padding: 0 80px;
+				font-size: 15px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		.bloc {
+			width: 100%;
+			height: 100%;
+
+			.title {
+				height: 80px; line-height: 80px;
+				padding: 0 80px;
+				font-size: 15px;
+			}
+		}
+	}
+
+}

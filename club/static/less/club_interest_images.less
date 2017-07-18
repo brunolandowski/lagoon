@@ -1,0 +1,144 @@
+.club_interests {
+	
+	.gallery {
+		height: auto;
+		padding: 8px;
+
+		.photo-container{
+		    position: absolute;
+
+		    .image-container{
+			    position: relative;
+			}
+
+			.image-thumb{
+			    position: relative;
+			    display: block;
+			    background-color: #eee;
+			    cusror: pointer;
+			}
+
+			.actions {
+				position: absolute;
+				top: 100%; left: 0;
+				width: 100%; height: auto;
+				height: 30px; line-height: 30px;
+				background-color: rgba(255,255,255,.8);
+
+				-webkit-transition: all 200ms;
+
+				transition: all 200ms;
+
+				.name {
+					font-family: @font-lagoon;
+					font-weight: 500;
+					font-size: 10px;
+					padding-left: 10px;
+					padding-right: 60px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+
+			&.over {
+				.actions {
+					-webkit-transform: translateY(-100%);
+					    -ms-transform: translateY(-100%);
+					        transform: translateY(-100%);
+				}
+			}
+		}
+
+		.touch & {
+			.photo-container{
+				.actions {
+					-webkit-transform: translateY(-100%);
+					    -ms-transform: translateY(-100%);
+					        transform: translateY(-100%);
+				}
+			}
+		}	
+	}
+
+	#zoomSlider {
+		.bloc {
+			.slider {
+				.slide {
+					.legend {
+						position: absolute;
+						left: 0; width: 100%;
+						bottom: 40px;
+						-webkit-transform: translateY(50%);
+						    -ms-transform: translateY(50%);
+						        transform: translateY(50%);
+						font-family: @font-lagoon-semi;
+						text-align: center;
+						color: #000;
+			    		font-weight: 400;
+			    		font-size: 10px;
+			    		line-height: 20px;
+						
+						.btn {
+							position: absolute;
+							top: 50%; margin-top: -15px;
+							width: 30px; height: 30px;
+							border-radius: 3px;
+							background-color: #00ADBB;
+							cursor: pointer;
+							right: 30px;
+							-webkit-transition: background-color 200ms;
+							transition: background-color 200ms;
+
+							&:nth-last-child(2) { right: 70px;}
+
+							&.add {
+								background: url('../img/common/squared-plus.svg') center no-repeat #00adbb;
+								background-size: 70%;
+							}
+
+							&.download {
+								background: url('../img/common/download.svg') center no-repeat #00adbb;
+								background-size: 70%;
+							}
+
+							&.over{ background-color: #333; };
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 760px) {
+		#zoomSlider .bloc .slider .slide .legend .btn.add,
+		.gallery .photo-container .actions .btn.add { display: none; }
+	}
+
+	/*
+	* Justified Gallery - v3.6.3
+	* http://miromannino.com/projects/justified-gallery/
+	* Copyright (c) 2016 Miro Mannino
+	* Licensed under the MIT license.
+	*/
+	.justified-gallery {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+
+		> a, > div {
+			position: absolute;
+			display: inline-block;
+			overflow: hidden;
+
+			> img, > a > img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: 0;
+				padding: 0;
+				border: none;
+			}   
+		}
+	}
+}

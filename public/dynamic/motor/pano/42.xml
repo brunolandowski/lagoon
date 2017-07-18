@@ -1,0 +1,437 @@
+<!--
+	krpano 1.0.8.12 - virtual tour examples
+	- done with <scene> tags to store the different pano scenes
+	- tour navigation via image map
+	- radar at current map point
+	- every scene has its own map radar mask (mapmask = image with alpha channel)
+	
+	(sorry - panos and map do not match up, this is just a technical example)
+-->
+
+<krpano version="1.0.8" onstart="loadscene(scene1,null,MERGE);" >
+
+	<!-- include buttons template (based on the buttons.png image)-->
+	<include url="bouton.xml" />
+	<!-- text styles for startup info -->
+	<textstyle name="infostyle" origin="top" edge="top" yoffset="10" textalign="center" background="false" border="false"  fontsize="40" textcolor="0xFFFFFF" bold="false" effect="glow(0xFFFFFF,0.7,4,2);glow(0x000000,1,4,2);dropshadow(3,45,0x000000,2,0.6);" showtime="1.0" fadetime="1.0" />
+
+
+	<!-- scenes -->
+
+	
+	<scene name="scene1" onstart="action(startscene);">
+		
+		<action name="startscene">
+			action(activatespot,scene1, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano1_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<autorotate enabled="true"
+            waittime="1.5"
+            speed="10.0"
+            />
+		<preview url="carre_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/carre_l.jpg" />
+        	<front url="normal/carre_f.jpg" />
+	        <right url="normal/carre_r.jpg" />
+	        <back  url="normal/carre_b.jpg" />
+    	    <up    url="normal/carre_u.jpg" />
+	        <down  url="normal/carre_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/carre_l.jpg" />
+        	<front url="mobile/carre_f.jpg" />
+	        <right url="mobile/carre_r.jpg" />
+	        <back  url="mobile/carre_b.jpg" />
+    	    <up    url="mobile/carre_u.jpg" />
+	        <down  url="mobile/carre_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>
+	
+	
+	<scene name="scene2" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene2, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano2_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="cab_ar_bab_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/cab_ar_bab_l.jpg" />
+        	<front url="normal/cab_ar_bab_f.jpg" />
+	        <right url="normal/cab_ar_bab_r.jpg" />
+	        <back  url="normal/cab_ar_bab_b.jpg" />
+    	    <up    url="normal/cab_ar_bab_u.jpg" />
+	        <down  url="normal/cab_ar_bab_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/cab_ar_bab_l.jpg" />
+        	<front url="mobile/cab_ar_bab_f.jpg" />
+	        <right url="mobile/cab_ar_bab_r.jpg" />
+	        <back  url="mobile/cab_ar_bab_b.jpg" />
+    	    <up    url="mobile/cab_ar_bab_u.jpg" />
+	        <down  url="mobile/cab_ar_bab_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>	
+	
+	
+	<scene name="scene3" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene3, 90);
+		</action>
+
+		<plugin name="mapmask" url="pano3_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="cab_av_bab_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/cab_av_bab_l.jpg" />
+        	<front url="normal/cab_av_bab_f.jpg" />
+	        <right url="normal/cab_av_bab_r.jpg" />
+	        <back  url="normal/cab_av_bab_b.jpg" />
+    	    <up    url="normal/cab_av_bab_u.jpg" />
+	        <down  url="normal/cab_av_bab_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/cab_av_bab_l.jpg" />
+        	<front url="mobile/cab_av_bab_f.jpg" />
+	        <right url="mobile/cab_av_bab_r.jpg" />
+	        <back  url="mobile/cab_av_bab_b.jpg" />
+    	    <up    url="mobile/cab_av_bab_u.jpg" />
+	        <down  url="mobile/cab_av_bab_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>	
+	
+	
+	<scene name="scene4" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene4, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano4_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="cab_ar_trib_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/cab_ar_trib_l.jpg" />
+        	<front url="normal/cab_ar_trib_f.jpg" />
+	        <right url="normal/cab_ar_trib_r.jpg" />
+	        <back  url="normal/cab_ar_trib_b.jpg" />
+    	    <up    url="normal/cab_ar_trib_u.jpg" />
+	        <down  url="normal/cab_ar_trib_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/cab_ar_trib_l.jpg" />
+        	<front url="mobile/cab_ar_trib_f.jpg" />
+	        <right url="mobile/cab_ar_trib_r.jpg" />
+	        <back  url="mobile/cab_ar_trib_b.jpg" />
+    	    <up    url="mobile/cab_ar_trib_u.jpg" />
+	        <down  url="mobile/cab_ar_trib_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>
+	
+	
+	
+	<scene name="scene5" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene5, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano5_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="cab_av_trib_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/cab_av_trib_l.jpg" />
+        	<front url="normal/cab_av_trib_f.jpg" />
+	        <right url="normal/cab_av_trib_r.jpg" />
+	        <back  url="normal/cab_av_trib_b.jpg" />
+    	    <up    url="normal/cab_av_trib_u.jpg" />
+	        <down  url="normal/cab_av_trib_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/cab_av_trib_l.jpg" />
+        	<front url="mobile/cab_av_trib_f.jpg" />
+	        <right url="mobile/cab_av_trib_r.jpg" />
+	        <back  url="mobile/cab_av_trib_b.jpg" />
+    	    <up    url="mobile/cab_av_trib_u.jpg" />
+	        <down  url="mobile/cab_av_trib_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>
+	
+	
+	<scene name="scene6" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene6, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano6_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="cab_trib_centre_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/cab_trib_centre_l.jpg" />
+        	<front url="normal/cab_trib_centre_f.jpg" />
+	        <right url="normal/cab_trib_centre_r.jpg" />
+	        <back  url="normal/cab_trib_centre_b.jpg" />
+    	    <up    url="normal/cab_trib_centre_u.jpg" />
+	        <down  url="normal/cab_trib_centre_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/cab_trib_centre_l.jpg" />
+        	<front url="mobile/cab_trib_centre_f.jpg" />
+	        <right url="mobile/cab_trib_centre_r.jpg" />
+	        <back  url="mobile/cab_trib_centre_b.jpg" />
+    	    <up    url="mobile/cab_trib_centre_u.jpg" />
+	        <down  url="mobile/cab_trib_centre_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>		
+			
+			
+			
+	<scene name="scene7" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene7, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano7_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="cab_trib_centre_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/carre-cockpit_l.jpg" />
+        	<front url="normal/carre-cockpit_f.jpg" />
+	        <right url="normal/carre-cockpit_r.jpg" />
+	        <back  url="normal/carre-cockpit_b.jpg" />
+    	    <up    url="normal/carre-cockpit_u.jpg" />
+	        <down  url="normal/carre-cockpit_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/carre-cockpit_l.jpg" />
+        	<front url="mobile/carre-cockpit_f.jpg" />
+	        <right url="mobile/carre-cockpit_r.jpg" />
+	        <back  url="mobile/carre-cockpit_b.jpg" />
+    	    <up    url="mobile/carre-cockpit_u.jpg" />
+	        <down  url="mobile/carre-cockpit_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>	
+	
+	
+	<scene name="scene8" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene8, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano8_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="cockpit_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/cockpit_l.jpg" />
+        	<front url="normal/cockpit_f.jpg" />
+	        <right url="normal/cockpit_r.jpg" />
+	        <back  url="normal/cockpit_b.jpg" />
+    	    <up    url="normal/cockpit_u.jpg" />
+	        <down  url="normal/cockpit_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/cockpit_l.jpg" />
+        	<front url="mobile/cockpit_f.jpg" />
+	        <right url="mobile/cockpit_r.jpg" />
+	        <back  url="mobile/cockpit_b.jpg" />
+    	    <up    url="mobile/cockpit_u.jpg" />
+	        <down  url="mobile/cockpit_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>
+			
+	
+	<scene name="scene9" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene9, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano9_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="cockpit1_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/cockpit1_l.jpg" />
+        	<front url="normal/cockpit1_f.jpg" />
+	        <right url="normal/cockpit1_r.jpg" />
+	        <back  url="normal/cockpit1_b.jpg" />
+    	    <up    url="normal/cockpit1_u.jpg" />
+	        <down  url="normal/cockpit1_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/cockpit1_l.jpg" />
+        	<front url="mobile/cockpit1_f.jpg" />
+	        <right url="mobile/cockpit1_r.jpg" />
+	        <back  url="mobile/cockpit1_b.jpg" />
+    	    <up    url="mobile/cockpit1_u.jpg" />
+	        <down  url="mobile/cockpit1_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>		
+	
+	
+	<scene name="scene10" onstart="action(startscene);">
+
+		<action name="startscene">
+			action(activatespot,scene10, -90);
+		</action>
+
+		<plugin name="mapmask" url="pano10_mapmask.png" devices="flash" parent="map" enabled="false" onloaded="updatemask();" />	
+		<view hlookat="0" vlookat="0"  fov="90" maxpixelzoom="2.0" fovmin="80" fovmax="110" limitview="range" vlookatmax ="66" vlookatmin ="-85"/>		
+
+		<preview url="barre_preview.jpg"/>
+		<image type="CUBE">
+    	    <left  url="normal/barre_l.jpg" />
+        	<front url="normal/barre_f.jpg" />
+	        <right url="normal/barre_r.jpg" />
+	        <back  url="normal/barre_b.jpg" />
+    	    <up    url="normal/barre_u.jpg" />
+	        <down  url="normal/barre_d.jpg" />
+	    <mobile>
+    	    <left  url="mobile/barre_l.jpg" />
+        	<front url="mobile/barre_f.jpg" />
+	        <right url="mobile/barre_r.jpg" />
+	        <back  url="mobile/barre_b.jpg" />
+    	    <up    url="mobile/barre_u.jpg" />
+	        <down  url="mobile/barre_d.jpg" />
+	    </mobile>
+			
+		</image>
+
+
+	</scene>				
+
+	
+
+
+
+	<!-- global settings -->
+	<!-- scalechildren important pour iphone sinon puce scaled mais pas le plan -->
+	<plugin name="map" url="42_plan.png" keep="true"  
+	        align="lefttop" x="16"  y="16" alpha="0.85" handcursor="false" 
+	        scalechildren="false" 
+            width="153" 
+            height="250"
+            
+            />
+		
+            
+    <plugin name="scene1" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="87"  y="122" zorder="2" onhover="showtext();"         onclick="loadscene(scene1, null, MERGE, BLEND(1));" />
+    <plugin name="scene2" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="30"  y="162" zorder="2" onhover="showtext();"         onclick="loadscene(scene2, null, MERGE, BLEND(1));" />	
+    <plugin name="scene3" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="28"  y="90" zorder="2" onhover="showtext();"         onclick="loadscene(scene3, null, MERGE, BLEND(1));" />
+    <plugin name="scene4" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="118"  y="160" zorder="2" onhover="showtext();"         onclick="loadscene(scene4, null, MERGE, BLEND(1));" />	
+    <plugin name="scene5" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="133"  y="71" zorder="2" onhover="showtext();"         onclick="loadscene(scene5, null, MERGE, BLEND(1));" />	
+    <plugin name="scene6" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="122"  y="122" zorder="2" onhover="showtext();"         onclick="loadscene(scene6, null, MERGE, BLEND(1));" />
+    <plugin name="scene7" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="75"  y="155" zorder="2" onhover="showtext();"         onclick="loadscene(scene7, null, MERGE, BLEND(1));" />		
+    <plugin name="scene8" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="76"  y="224" zorder="2" onhover="showtext();"         onclick="loadscene(scene8, null, MERGE, BLEND(1));" />		
+    <plugin name="scene9" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="9"  y="220" zorder="2" onhover="showtext();"         onclick="loadscene(scene9, null, MERGE, BLEND(1));" />	
+    <plugin name="scene10" url="mappoint.png" keep="true" parent="map" align="lefttop" edge="center" x="27"  y="204" zorder="2" onhover="showtext();"         onclick="loadscene(scene10, null, MERGE, BLEND(1));" />									
+
+	
+    
+    
+    <!-- activated hotpot -->
+    <plugin name="activespot" url="mappointactive.png" keep="true" align="center" edge="center" visible="false" zorder="3" />
+    
+    <!-- radar plugin, set heading with "plugin[radar].heading" -->
+    <plugin name="radar"
+	        url="%SWFPATH%/plugins/radar.swf"
+	        zorder="1"
+	        keep="true"
+	        heading="0"
+	        parent="map"
+	        mask="mapmask"
+	        align="lefttop"
+	        edge="center"
+	        x="0" y="0"
+	        linecolor="0"
+	        fillcolor="0xFF0000"
+	        scale="2.5"
+	        visible="false"
+	        />
+
+
+    
+	<!-- update mask for radar -->
+	<action name="updatemask">
+		set(plugin[radar].mask, mapmask);
+	</action>
+    	        
+
+	<!-- actions -->
+	<action name="closemap">
+        set(onclick,action(openmap););
+        tween(width,64,distance(320,0.5),easeoutquad);
+        tween(height,45,distance(227,0.5),easeoutquad);
+    </action>
+    
+    <action name="openmap">
+        set(onclick,action(closemap););
+        tween(width,320,distance(320,0.5),easeoutquad);
+        tween(height,227,distance(227,0.5),easeoutquad);
+    </action>
+
+
+	<!-- activatespot action, 
+	     - this action has two arguments:
+	       - %1 = the current spot
+	       - %2 = the current radar heading
+	-->
+	<action name="activatespot">
+		set(plugin[activespot].parent, plugin[%1]);
+		set(plugin[activespot].visible, true);
+		
+		copy(plugin[radar].x, plugin[%1].x);
+		copy(plugin[radar].y, plugin[%1].y);
+		
+		set(plugin[radar].visible, true);
+		set(plugin[radar].heading, %2);
+	</action>
+	
+
+
+</krpano>
+

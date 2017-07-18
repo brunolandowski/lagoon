@@ -1,0 +1,256 @@
+@import "variables.less";
+
+section#newsletter {
+	background-image: url('../img/common/newsletter.jpg');
+	position: relative;
+	height: 440px; line-height: 440px;
+	text-align: center;
+
+	.text {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 50%;
+
+		.title {
+        	text-transform: uppercase;
+    		font-family: @font-lagoon-ext;
+    		font-weight: 400;
+			font-size: 15px; line-height: 20px;
+    		margin-bottom: 25px;
+    		color: #00adbb;
+    	}
+
+    	.desc {      	
+    		font-family: @font-lagoon-semi;
+    		font-weight: 400;
+    		font-size: 10px;
+    	}
+
+		#newsform {
+			position: relative;
+			padding-top: 20px;
+
+			input {
+				display: block;
+				margin: 0 auto;
+				padding: 0 20px;
+				text-align: center;
+				-webkit-appearance: none;
+				   -moz-appearance: none;
+				        appearance: none;
+				border: 1px solid #ccc;
+				height: 40px; width: 270px;
+				line-height: 40px;
+				font-family: @font-lagoon;
+        		font-weight: 500;
+        		font-size: 12px;
+
+        		&.error {
+        			border-color: #d9534f;
+					color: #d9534f;
+				}
+		
+				&::-webkit-input-placeholder {
+					text-transform: uppercase;
+				}
+		 		&[name=lastname] { display: none;}
+		
+				&::-moz-placeholder {
+					text-transform: uppercase;
+				}
+		
+				&::-ms-input-placeholder {
+					text-transform: uppercase;
+				}
+			}
+		
+			#newsletter_lastname {
+				display: none;
+			}
+
+			.cta {
+        		display: inline-block;
+        		margin-top: 20px;
+        		text-transform: uppercase;
+        		font-family: @font-lagoon;
+        		font-weight: 700;
+        		font-size: 10px; line-height: 25px;
+        		cursor: pointer;
+
+        		&:after {
+        			content: "";
+        			display: block;
+        			margin: 8px auto 0;
+        			width: 25px; height:3px;
+        			background-color: #000; 
+        		}
+
+        		&.over:after {
+        			width: 50px;
+        		}
+        	}
+
+        	.message {
+        		position: absolute;
+        		top: 100%; left: 0;
+        		width: 100%;
+        		margin-top: 20px;
+        		font-family: @font-lagoon;
+        		font-weight: 500;
+        		font-size: 12px;
+        		display: none;
+
+        		&.success { color: #5cb85c; }
+        		&.wrong, &.error { color: #d9534f; }
+        	}
+		}
+	}
+
+	@media screen and (min-width: 1441px){
+		background-image: url('../img/common/newsletter_x2.jpg');
+		height: 440px * @ratio1680; line-height: 440px * @ratio1680;
+		
+		.text {
+			.title {
+	        	font-size: 15px * @ratio1680; line-height: 20px * @ratio1680;
+	    		margin-bottom: 25px * @ratio1680;
+	    	}
+
+	    	.desc {      	
+	    		font-size: 10px * @ratio1680;
+	    	}
+
+			#newsform {
+				padding-top: 20px * @ratio1680;
+
+				input {
+					padding: 0 20px * @ratio1680;
+					height: 40px * @ratio1680; width: 270px * @ratio1680;
+					line-height: 40px * @ratio1680;
+					font-size: 12px * @ratio1680;
+				}
+
+				.cta {
+	        		margin-top: 20px * @ratio1680;
+	        		font-size: 10px * @ratio1680; line-height: 25px * @ratio1680;
+	        		
+	        		&:after {
+	        			margin: 8px * @ratio1680 auto 0;
+	        			width: 25px * @ratio1680; height:3px * @ratio1680;
+	        		}
+
+	        		&.over:after {
+	        			width: 50px * @ratio1680;
+	        		}
+	        	}
+
+	        	.message {
+	        		margin-top: 20px * @ratio1680;
+	        		font-size: 12px * @ratio1680;
+	        	}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1681px){
+		height: 440px * @ratio1920; line-height: 440px * @ratio1920;
+		
+		.text {
+			.title {
+	        	font-size: 15px * @ratio1920; line-height: 20px * @ratio1920;
+	    		margin-bottom: 25px * @ratio1920;
+	    	}
+
+	    	.desc {      	
+	    		font-size: 10px * @ratio1920;
+	    	}
+
+			#newsform {
+				padding-top: 20px * @ratio1920;
+
+				input {
+					padding: 0 20px * @ratio1920;
+					height: 40px * @ratio1920; width: 270px * @ratio1920;
+					line-height: 40px * @ratio1920;
+					font-size: 12px * @ratio1920;
+				}
+
+				.cta {
+	        		margin-top: 20px * @ratio1920;
+	        		font-size: 10px * @ratio1920; line-height: 25px * @ratio1920;
+	        		
+	        		&:after {
+	        			margin: 8px * @ratio1920 auto 0;
+	        			width: 25px * @ratio1920; height:3px * @ratio1920;
+	        		}
+
+	        		&.over:after {
+	        			width: 50px * @ratio1920;
+	        		}
+	        	}
+
+	        	.message {
+	        		margin-top: 20px * @ratio1920;
+	        		font-size: 12px * @ratio1920;
+	        	}
+			}
+		}
+	}
+
+
+	@media screen and (max-width: 1280px){
+		height: 440px * @ratio1280; line-height: 440px * @ratio1280;
+		
+		.text {
+			.title {
+	        	font-size: 15px * @ratio1280; line-height: 20px * @ratio1280;
+	    		margin-bottom: 25px * @ratio1280;
+	    	}
+
+			#newsform {
+				padding-top: 20px * @ratio1280;
+
+				input {
+					padding: 0 20px * @ratio1280;
+					height: 40px * @ratio1280; width: 270px * @ratio1280;
+					line-height: 40px * @ratio1280;
+					font-size: 12px * @ratio1280;
+				}
+
+				.cta {
+	        		margin-top: 20px * @ratio1280;
+	        		line-height: 25px * @ratio1280;
+	        		
+	        		&:after {
+	        			margin: 8px * @ratio1280 auto 0;
+	        			width: 25px * @ratio1280; height:3px * @ratio1280;
+	        		}
+
+	        		&.over:after {
+	        			width: 50px * @ratio1280;
+	        		}
+	        	}
+
+	        	.message {
+	        		margin-top: 20px * @ratio1280;
+	        		font-size: 12px * @ratio1280;
+	        	}
+			}
+		}
+	}
+
+	@media screen and (max-width: 800px){
+		background-image: url('../img/common/newsletter_mob.jpg');
+
+		.text {
+			padding: 0 40px;
+			max-width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 560px){
+		.text {
+			padding: 0 20px;
+		}
+	}
+}

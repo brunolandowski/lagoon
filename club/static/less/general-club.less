@@ -1,0 +1,42 @@
+.textIntro {
+	margin: 40px;
+
+	h1 {
+		position: relative;
+		text-align: center;
+		
+		text-transform: uppercase;
+		font-family: @font-lagoon-semi;
+		font-size: 20px;
+		color: #00adbb;		
+	}
+
+	h2 {
+		position: relative;
+		text-align: center;
+		
+		text-transform: uppercase;
+		font-family: @font-lagoon-semi;
+		font-size: 15px;
+		color: #000;
+		margin-top: 15px;		
+	}
+
+	@media screen and (min-width: 1441px){
+		margin: 40px * @ratio1680;
+		h1 { font-size: 20px * @ratio1680; }
+		h2 { font-size: 15px * @ratio1680; margin-top: 15px * @ratio1680; }
+	}
+
+	@media screen and (min-width: 1681px){
+		margin: 40px * @ratio1920;
+		h1 { font-size: 20px * @ratio1920; }
+		h2 { font-size: 15px * @ratio1920; margin-top: 15px * @ratio1920; }
+	}
+
+	@media screen and (max-width: 1280px){
+		margin: 40px * @ratio1280;
+		h1 { font-size: 20px * @ratio1280; }
+		h2 { font-size: 15px * @ratio1280; margin-top: 15px * @ratio1280; }
+	}
+}

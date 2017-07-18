@@ -1,0 +1,419 @@
+@import "variables.less";
+@import "main.less";
+@import "general.less";
+
+
+.subnav {
+	position: absolute;
+	top: 162px; left: 0;
+	width: 100%; height: 60px;
+	line-height: 60px;
+	background-color: #fff;
+	font-family: @font-lagoon;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #989898;
+	border-bottom: 1px solid #ccc;
+	z-index: 20;
+	
+	&.opened {
+		z-index: 90;
+	}
+
+	ul {
+		list-style: none;
+		font-size: 0;
+		height: 100%;
+		margin: 0;
+		text-align: center;
+		padding: 0 210px;
+
+		li {
+			position: relative;
+			display: inline-block;
+			height: 100%;    			
+			font-size: 9px;
+			letter-spacing: .01em;
+			padding: 0 20px;
+			cursor: pointer;
+			
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: 0; left: 50%;
+				height: 5px; width: 0;
+				-webkit-transform: translateX(-50%);
+				    -ms-transform: translateX(-50%);
+				        transform: translateX(-50%);
+				background-color: #00adbb;
+
+				-webkit-transition: width 400ms @easeOutQuart;
+				transition: width 400ms @easeOutQuart;
+			}
+
+			&.active:after {
+				width: 45px;
+			}
+		}
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+	}
+
+	@media screen and (min-width: 1441px){
+		top: 162px * @ratio1680;
+		height: 60px * @ratio1680;
+		line-height: 60px * @ratio1680;		
+
+		ul {
+			padding: 0 210px * @ratio1680;
+    		li {
+    			font-size: 9px * @ratio1680;
+    			padding: 0 20px * @ratio1680;
+
+    		}
+    	}
+	}
+
+	@media screen and (min-width: 1681px){
+		top: 162px * @ratio1920;
+		height: 60px * @ratio1920;
+		line-height: 60px * @ratio1920;		
+
+		ul {
+			padding: 0 210px * @ratio1920;
+    		li {
+    			font-size: 9px * @ratio1920;
+    			padding: 0 20px * @ratio1920;
+
+    		}
+    	}
+	}
+
+	@media screen and (max-width: 1280px){
+		top: 162px * @ratio1280;
+		height: 60px * @ratio1280;
+		line-height: 60px * @ratio1280;	
+		ul {
+			padding: 0 210px * @ratio1280;
+    		li {
+    			padding: 0 15px;
+
+    		}
+    	}
+	}
+
+	@media screen and (max-width: 1024px){
+		top: 120px;
+		height: 40px; line-height: 40px;	
+		ul {
+			padding: 0 40px;
+    		li {
+    			padding: 0 15px;
+
+    		}
+    	}
+	}
+
+	@media screen and (max-width: 900px){
+		height: 49px; line-height: 49px;
+		ul {
+			padding: 0 20px;
+		}
+	}
+
+	@media screen and (max-width: 760px){
+		top: 80px;	
+		ul {
+			padding: 0 10px;
+		}
+	}
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.account h1 {
+	margin-top: 100px;
+	margin-bottom: 40px;
+	font-family: @font-lagoon-ext;
+	text-transform: uppercase;
+	color: #00adbb;
+	font-size: 15px; line-height: 20px;
+	text-align: center;
+
+	@media screen and (min-width: 1441px){
+		margin-top: 100px * @ratio1680;
+		font-size: 15px * @ratio1680;
+		line-height: 20px * @ratio1680;
+		margin-bottom: 40px * @ratio1680;
+	}
+
+	@media screen and (min-width: 1681px){
+		margin-top: 100px * @ratio1920;
+		font-size: 15px * @ratio1920;
+		line-height: 20px * @ratio1920;
+		margin-bottom: 40px * @ratio1920;
+	}
+
+	@media screen and (max-width: 1280px){
+		margin-top: 100px * @ratio1280;
+		font-size: 15px * @ratio1280;
+		line-height: 20px * @ratio1280;
+		margin-bottom: 40px * @ratio1280;
+	}
+
+	@media screen and (max-width: 1024px){
+		margin-top: 70px;
+	}
+
+	@media screen and (max-width: 900px){
+		margin-top: 70px;
+	}
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.tab {
+	position: relative;
+	height: auto;
+	margin: 0 auto;
+	max-width: 660px;
+	padding: 0 20px;
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+.formContent {
+	position: relative;
+	margin: 0 auto;
+	
+	.text {
+		text-align: center;
+		.desc {
+			margin-bottom: 40px;
+		}
+		
+		input[type=text], input[type=password], textarea {
+			-webkit-appearance: none;
+			   -moz-appearance: none;
+			        appearance: none;
+
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			padding: 0 20px;
+
+			border: 1px solid #ddd;
+			font-family: @font-lagoon;
+			font-size: 11px;
+			
+			width: 100%;
+			height: 40px; line-height: 40px;
+		}
+		
+		.subtitle {
+			text-transform: uppercase;
+			font-family: @font-lagoon;
+			font-weight: 500;
+			color: #999;
+			font-size: 11px;
+		}
+
+		
+
+		textarea {
+			padding: 10px 20px;
+			line-height: 20px;
+			height: 100px;
+			max-height: 200px;
+			width: 100%; max-width: 100%; min-width: 100%; 
+		}
+
+		.select {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			border: 1px solid #ddd;
+			background-color: #fff;
+			width: 100%;
+			
+			&:before {
+				content: "";
+				position: absolute;
+				right: 10px; top: 50%;
+				margin-top: -4px;
+				border: 4px solid #00adbb;
+				border-left-color: transparent;
+				border-top-color: transparent;
+				-webkit-transform: rotate(45deg);
+				    -ms-transform: rotate(45deg);
+				        transform: rotate(45deg);
+
+			}
+			select {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				-webkit-appearance: none;
+				   -moz-appearance: none;
+				        appearance: none;
+				        background-color: transparent;
+				        border: none;
+				height: 40px; width: 100%;
+				line-height: 40px;
+				padding-left: 20px;
+				font-family: @font-lagoon;
+				font-size: 10px;
+			}
+		}
+
+		.error {
+			border-color: #c00!important;
+			color: #c00;
+
+			input, select {
+				color: #c00;
+			}
+		}
+
+		.line{
+			display: block;
+			margin-bottom: 10px;
+			font-size: 0;
+			text-align: left;
+			
+			&.space {
+				margin-bottom: 20px;
+			}
+
+			.select, input, .info {
+				display: inline-block;
+				margin-bottom: 0;
+
+				&:nth-last-child(2):first-child,
+				&:nth-last-child(2):first-child ~ input,
+				&:nth-last-child(2):first-child ~ .select,
+				&:nth-last-child(2):first-child ~ .info { width: calc( ~"50% - 5px" ); }
+				&:nth-last-child(2):first-child { margin-right: 9px;}
+
+				&:nth-last-child(3):first-child,
+				&:nth-last-child(3):first-child ~ input,
+				&:nth-last-child(3):first-child ~ .select, 
+				&:nth-last-child(3):first-child ~ .info { width: calc( ~"(100% - 20px ) / 3" ); }
+				&:nth-last-child(3):first-child ~ *:nth-child(2), { margin: 0 9px;}
+			}
+			
+			.subtitle {
+				display: inline-block;
+				vertical-align: middle;
+				width: 180px;
+			}
+
+			.line {
+				display: inline-block;
+				vertical-align: middle;
+				width: calc( ~"100% - 190px");
+				margin-bottom: 0;
+			}
+
+			.info {
+				position: relative;
+				font-family: @font-lagoon;
+				font-size: 10px;
+				width: 100%; line-height: 15px;
+				margin-bottom: 5px;
+		
+				.subtitle {
+					display: inline-block;
+					vertical-align: top;
+					margin-right: 10px;
+					width: auto;
+				}
+
+				span{
+					display: inline-block;
+					vertical-align: top;
+				} 
+			}
+
+			input[type=radio], input[type=checkbox] {
+				margin-right: 7px 
+			}
+
+			label {
+				text-transform: uppercase;
+				font-family: @font-lagoon;
+				font-size: 10px; margin-right: 20px;
+			}
+
+			.infos {
+				display: inline-block;
+				text-transform: uppercase;
+				font-family: @font-lagoon;
+				font-size: 11px;
+				margin-right: 40px;
+			}
+
+		}
+
+		.cta {
+			&:after {
+				background-color: #000;
+			}
+		}
+
+		.responseMessage {
+			display: none;
+    		width: 100%;
+    		text-align: center;
+    		margin-top: 10px;
+    		position: relative;
+    		font-family: @font-lagoon;
+    		font-weight: 700;
+    		font-size: 10px;
+    		line-height: 15px;
+    		color: #C00;
+
+    		&.success {
+    			color: #5cb85c;
+    		}
+    	}
+	}
+
+	@media screen and (max-width:600px) {
+		.text {
+			.line {
+				.subtitle, .line {
+					display: block;
+					width: 100%;
+				}
+
+				.subtitle {
+					margin-bottom: 5px;
+				}
+
+				.select, input, .info {
+					display: block;
+					width: 100%!important;
+
+					&:nth-last-child(n+2) {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+	
+}	
+

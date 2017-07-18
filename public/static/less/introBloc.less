@@ -1,0 +1,86 @@
+@import "variables.less";
+
+.introBloc {
+	position: relative;
+	background-color: #000;
+
+
+	.content {
+		max-width: 1560px / 2;
+		margin: 0 auto;
+		padding: 110px 40px;
+		text-align: center;
+
+		.text {
+			position: relative;
+			vertical-align: middle;
+			text-align: center;		
+			
+			.title {
+				font-weight: 400;
+				font-size: 25px;
+				line-height: 25px;
+				color: #FFF;
+			}
+
+			.desc {
+				color: #fff;
+			}
+		}
+	}
+	
+	@media screen and (min-width: 1441px){
+		.content {
+			max-width: 1560px * @ratio1680 / 2;
+			padding: 110px * @ratio1680 40px * @ratio1680;
+
+			.text {
+				.title {
+					font-size: 25px * @ratio1680;
+					line-height: 25px * @ratio1680;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1681px){
+		.content {
+			max-width: 1560px * @ratio1920 / 2;
+			padding: 110px * @ratio1920 40px * @ratio1920;
+
+			.text {
+				.title {
+					font-size: 25px * @ratio1920;
+					line-height: 25px * @ratio1920;
+				}
+			}
+		}
+	}
+	
+	@media screen and (max-width: 1280px){
+		.content {
+			max-width: 1560px * @ratio1280 / 2;
+			padding: 110px * @ratio1280 40px * @ratio1280;
+
+			.text {
+				.title {
+					font-size: 25px * @ratio1280;
+					line-height: 25px * @ratio1280;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 600px){	
+		.bg {
+			opacity: .7;
+		}
+		.content {
+			padding: 80px 20px;
+			.text {
+				.title {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
