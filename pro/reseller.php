@@ -31,94 +31,56 @@ include "header.php";
                 <div class="category">Directeur</div>
                 <div class="group">
                     
-                    <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
-                            <div class="contacts">
-                                <div class="call">
-                                    <div><b>Tel :</b> +15102362633</div>
-                                    <div><b>Mob :</b> +15102362633</div>
-                                    <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
-                                </div>
+                     <div class="people">
+                        <div class="name">Nom compte</div>
+                        <div class="contacts">
+                            <div class="adress">Deborah Reynolds<br>1220 Brickyard Cove Road<br>Pt. Richmond - CA 94801</div>
+                            <div class="call">
+                                <div><b>Tel :</b> +15102362633</div>
+                                <div><b>Mob :</b> +15102362633</div>
+                                <div><b>Fax :</b> +15102362633</div>
                             </div>
-
-                            <div class="clearfix"></div>
-                        </article>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="web">
+                            <div class="mail"><b>mail :</b> mail@mail.mail</div>
+                            <div class="www"><b>web :</b> www.web.web</div>
+                        </div>
+                    </div>
+                    
+                     <div class="people">
+                        <div class="name">Nom compte</div>
+                        <div class="contacts">
+                            <div class="adress">Deborah Reynolds<br>1220 Brickyard Cove Road<br>Pt. Richmond - CA 94801</div>
+                            <div class="call">
+                                <div><b>Tel :</b> +15102362633</div>
+                                <div><b>Mob :</b> +15102362633</div>
+                                <div><b>Fax :</b> +15102362633</div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="web">
+                            <div class="mail"><b>mail :</b> mail@mail.mail</div>
+                            <div class="www"><b>web :</b> www.web.web</div>
+                        </div>
                     </div>
 
                      <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
-                            <div class="contacts">
-                                <div class="call">
-                                    <div><b>Tel :</b> +15102362633</div>
-                                    <div><b>Mob :</b> +15102362633</div>
-                                    <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
-                                </div>
+                        <div class="name">Nom compte</div>
+                        <div class="contacts">
+                            <div class="adress">Deborah Reynolds<br>1220 Brickyard Cove Road<br>Pt. Richmond - CA 94801</div>
+                            <div class="call">
+                                <div><b>Tel :</b> +15102362633</div>
+                                <div><b>Mob :</b> +15102362633</div>
+                                <div><b>Fax :</b> +15102362633</div>
                             </div>
-
-                            <div class="clearfix"></div>
-                        </article>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="web">
+                            <div class="mail"><b>mail :</b> mail@mail.mail</div>
+                            <div class="www"><b>web :</b> www.web.web</div>
+                        </div>
                     </div>
-
-                     <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
-                            <div class="contacts">
-                                <div class="call">
-                                    <div><b>Tel :</b> +15102362633</div>
-                                    <div><b>Mob :</b> +15102362633</div>
-                                    <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </article>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
-                    </div>
-
-                     <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
-                            <div class="contacts">
-                                <div class="call">
-                                    <div><b>Tel :</b> +15102362633</div>
-                                    <div><b>Mob :</b> +15102362633</div>
-                                    <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </article>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
-                    </div>
-
 
                    
                     
@@ -126,116 +88,96 @@ include "header.php";
                 <div class="category">France</div>
                 <div class="group">
                      <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
-                            <div class="contacts">
-                                <div class="call">
-                                    <div><b>Tel :</b> +15102362633</div>
-                                    <div><b>Mob :</b> +15102362633</div>
-                                    <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
-                                </div>
+                        <div class="name">Nom compte</div>
+                        <div class="contacts">
+                            <div class="adress">Deborah Reynolds<br>1220 Brickyard Cove Road<br>Pt. Richmond - CA 94801</div>
+                            <div class="call">
+                                <div><b>Tel :</b> +15102362633</div>
+                                <div><b>Mob :</b> +15102362633</div>
+                                <div><b>Fax :</b> +15102362633</div>
                             </div>
-
-                            <div class="clearfix"></div>
-                        </article>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="web">
+                            <div class="mail"><b>mail :</b> mail@mail.mail</div>
+                            <div class="www"><b>web :</b> www.web.web</div>
+                        </div>
                     </div>
 
                      <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
-                            <div class="contacts">
-                                <div class="call">
-                                    <div><b>Tel :</b> +15102362633</div>
-                                    <div><b>Mob :</b> +15102362633</div>
-                                    <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
-                                </div>
+                        <div class="name">Nom compte</div>
+                        <div class="contacts">
+                            <div class="adress">Deborah Reynolds<br>1220 Brickyard Cove Road<br>Pt. Richmond - CA 94801</div>
+                            <div class="call">
+                                <div><b>Tel :</b> +15102362633</div>
+                                <div><b>Mob :</b> +15102362633</div>
+                                <div><b>Fax :</b> +15102362633</div>
                             </div>
-
-                            <div class="clearfix"></div>
-                        </article>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="web">
+                            <div class="mail"><b>mail :</b> mail@mail.mail</div>
+                            <div class="www"><b>web :</b> www.web.web</div>
+                        </div>
                     </div>
 
-                     <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
-                            <div class="contacts">
-                                <div class="call">
-                                    <div><b>Tel :</b> +15102362633</div>
-                                    <div><b>Mob :</b> +15102362633</div>
-                                    <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
-                                </div>
-                            </div>
+                     
 
-                            <div class="clearfix"></div>
-                        </article>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
-                    </div>
+                    
                 </div>
                 <div class="category">Italie</div>
                     <div class="group">
-                         <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
+                        <div class="people">
+                            <div class="name">Nom compte</div>
                             <div class="contacts">
+                                <div class="adress">Deborah Reynolds<br>1220 Brickyard Cove Road<br>Pt. Richmond - CA 94801</div>
                                 <div class="call">
                                     <div><b>Tel :</b> +15102362633</div>
                                     <div><b>Mob :</b> +15102362633</div>
                                     <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
                                 </div>
                             </div>
-
                             <div class="clearfix"></div>
-                        </article>
+                            <div class="web">
+                                <div class="mail"><b>mail :</b> mail@mail.mail</div>
+                                <div class="www"><b>web :</b> www.web.web</div>
+                            </div>
+                        </div>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
-                    </div>
-
-                     <div class="people">
-                        <div class="peopleimg"></div>
-                        
-                        <article>
-                            <div class="name">LOÏC LAGRANGE</div>
-                            <span class="function">RESPONSABLE COMMERCIAL</span>
+                        <div class="people">
+                            <div class="name">Nom compte</div>
                             <div class="contacts">
+                                <div class="adress">Deborah Reynolds<br>1220 Brickyard Cove Road<br>Pt. Richmond - CA 94801</div>
                                 <div class="call">
                                     <div><b>Tel :</b> +15102362633</div>
                                     <div><b>Mob :</b> +15102362633</div>
                                     <div><b>Fax :</b> +15102362633</div>
-                                    <div class="mail"><b>mail :</b> mail@mail.mail</div>
                                 </div>
                             </div>
-
                             <div class="clearfix"></div>
-                        </article>
+                            <div class="web">
+                                <div class="mail"><b>mail :</b> mail@mail.mail</div>
+                                <div class="www"><b>web :</b> www.web.web</div>
+                            </div>
+                        </div>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim ex ut erat convallis venenatis.</p>
-                        
-                    </div>
+                        <div class="people">
+                            <div class="name">Nom compte</div>
+                            <div class="contacts">
+                                <div class="adress">Deborah Reynolds<br>1220 Brickyard Cove Road<br>Pt. Richmond - CA 94801</div>
+                                <div class="call">
+                                    <div><b>Tel :</b> +15102362633</div>
+                                    <div><b>Mob :</b> +15102362633</div>
+                                    <div><b>Fax :</b> +15102362633</div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="web">
+                                <div class="mail"><b>mail :</b> mail@mail.mail</div>
+                                <div class="www"><b>web :</b> www.web.web</div>
+                            </div>
+                        </div>
+
                     
                    
                 </div>
@@ -245,6 +187,16 @@ include "header.php";
         </div>
         
     </div>
+
+<ul class="pagination">
+    <li class="page current">1</li>
+    <li class="page"><a href="#">2</a></li>
+    <li class="page"><a href="#">3</a></li>
+    <li class="page elipsis">...</li>
+    <li class="page"><a href="#">6</a></li>
+    <li class="page"><a href="#">7</a></li>
+    <li class="page"><a href="#">Suivants</a></li>
+</ul>
 <?php 
 include "footer.php";
 ?>
