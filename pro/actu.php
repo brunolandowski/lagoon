@@ -9,7 +9,7 @@ include "header.php";
         <h1>ACTUALITÉS</h1>
     </div> 
 
-<div class="bloclist">
+<div class="bloclist popuplaunch">
     <div class="content">
         
         <div class="filters">
@@ -20,7 +20,7 @@ include "header.php";
             </div>
         </div>
 
-        <article>
+        <article class="items" data-item="01">
             <div class="left">
                 <h3>ACTUALITÉ PRO NUMÉRO 1</h3>
                 <span class="date">LE 12 MARS 2017 À 16h30</span>
@@ -36,7 +36,7 @@ include "header.php";
             </div>
         </article>
 
-          <article>
+          <article class="items" data-item="02">
             <div class="left">
                 <h3>ACTUALITÉ PRO NUMÉRO 1</h3>
                 <span class="date">LE 12 MARS 2017 À 16h30</span>
@@ -52,7 +52,7 @@ include "header.php";
             </div>
         </article>
 
-          <article>
+          <article class="items" data-item="03">
             <div class="left">
                 <h3>ACTUALITÉ PRO NUMÉRO 1</h3>
                 <span class="date">LE 12 MARS 2017 À 16h30</span>
@@ -80,6 +80,124 @@ include "header.php";
     <li class="page"><a href="#">7</a></li>
     <li class="page"><a href="#">Suivants</a></li>
 </ul>
+
+<div class="popup" data-item="01">
+      <div class="items">
+        <article>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <h2>ACTUALITÉ PRO NUMÉRO 1</h2>
+            <span class="date">LE 12 MARS 2017 À 16h30</span>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            <p class="link">Site web : <a href="">http://www.google.fr/</a></p>
+
+            <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+             <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+            <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+             <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+        </article>
+        
+        
+       
+   
+    </div>
+</div>
+
+<div class="popup" data-item="02">
+      <div class="items">
+        <article>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <h2>ACTUALITÉ PRO NUMÉRO 1</h2>
+            <span class="date">LE 12 MARS 2017 À 16h30</span>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            <p class="link">Site web : <a href="">http://www.google.fr/</a></p>
+
+            <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+             <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+            <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+             <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+        </article>
+        
+        
+       
+   
+    </div>
+</div>
+
+<div class="popup" data-item="03">
+      <div class="items">
+        <article>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <h2>ACTUALITÉ PRO NUMÉRO 1</h2>
+            <span class="date">LE 12 MARS 2017 À 16h30</span>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            <p class="link">Site web : <a href="">http://www.google.fr/</a></p>
+
+            <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+             <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+            <div class="content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+
+             <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eros erat, in aliquam justo porta quis. Fusce feugiat sit amet magna egestas finibus. Maecenas et felis nec tortor tristique tincidunt at eget ipsum.</p>
+            </div>
+        </article>
+        
+        
+       
+   
+    </div>
+</div>
+
 <?php 
 include "footer.php";
 ?>

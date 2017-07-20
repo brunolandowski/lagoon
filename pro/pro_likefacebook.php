@@ -6,7 +6,7 @@ $className = 'likefacebook';
 
 include "header.php";
 ?>
-<div class="slideEvent">
+<div class="slideEvent popuplaunch">
     <div class="items" data-item="01">
         <aside>
             <span>25</span>
