@@ -5,132 +5,115 @@ $className = 'events';
 
 include "header.php";
 ?>
-    <div class="lateralList">       
-        <div class="list">
-            <div class="title">DOSSIERS</div>
-            <ul>
-                <li class="folder"><a href="news.php">gestion des news</a></li>
-                <li class="folder"><a href="mea.php">gestion des mises en avant</a></li>
-                <li class="folder active">gestion des événement & salons</li>
-                <li class="folder "><a href="pages.php">gestion des pages</a></li>
-                <li class="user"><a href="charters.php">gestion des comptes loueurs</a></li>
-                <li class="user"><a href="#">gestion des comptes users</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <div class="breadcrum"><a href="home.php">Site public</a> > Gestion des événement & salons</div>            
-            <div class="actions">      
-                <a href="" class="button actionButton addEvents">Ajouter un événement</a>
-            </div>
-            <div class="title folder clearfix">gestion des événement & salons</div>
+
+<div class="organize">
+    <article style="background: url('https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=') no-repeat center;">
+        <h2>ORGANISER VOS ÉVÈNEMENTS</h2>
+        <p>Passez des commandes d'accessoires pour vos stand sur la boutique</p>
+        <button>VOIR TOUS LES TARIFS</button>
+    </article>
+</div>
+
+<div class="title">
+        <h1>LES SALONS ET ÉVÈNEMENTS</h1>
+</div> 
+
+<div class="content">
             <div class="filters">
                 <div class="select">
-                    <select name="" id="">
-                        <option selected="selected">Pays</option>
-                    </select>
-                </div>    
+                        <select name="" id="">
+                            <option selected="selected">PAYS</option>
+                        </select>
+                </div>
+                <div class="select">
+                        <select name="" id="">
+                            <option selected="selected">MODÈLE</option>
+                        </select>
+                </div>
+               
             </div>
-            <ul class="lines">
+</div>
 
-                <li class='th'>
-                    <span class="nom part">Noms</span>
-                    <span class="country part">Pays</span>                    
-                    <span class="date part">date</span>
-                    <span class="boats part">Modèles</span>
-                    <span class="app empty part"><div class="icon tab"></div></span>
-                    <span class="edit empty part"></span>
-                </li>
 
-                <li class="line">
-                    <span class="nom part">Nom événement</span>
-                    <span class="country part">France</span>
-                    <span class="date part">12 / 04 / 2017</span>
-                    <span class="boats part">
-                         <span class="partContent">
-                             <span class="boat">380</span>
-                             <span class="boat">42</span>
-                             <span class="boat">51 s</span>
-                             <span class="boat">seventy 7</span>
-                         </span>
-                    </span>
-                    <span class="app part"><div class="icon on"></div></span>
-                    <a href="edit-event.php" class="edit part"></a>
-                </li>
+<div class="table">
+    <table>
+    <tr class="label">
+        <td>NOM DU SALON</td>
+        <td>PAYS</td>
+        <td>DATES</td>
+        <td>MODÈLES</td>
+        <td></td>
+      </tr>
 
-                <li class="line">
-                    <span class="nom part">Nom événement</span>
-                    <span class="country part">France</span>
-                    <span class="date part">12 / 09 / 2016</span>
-                     <span class="boats part">
-                         <span class="partContent">
-                             <span class="boat">39</span>
-                             <span class="boat">46</span>
-                             <span class="boat">51 s</span>
-                         </span>
-                    </span>
-                    <span class="app part"><div class="icon on"></div></span>
-                    <a href="edit-event.php" class="edit part"></a>
-                </li>
+      <tr class="special">
+        <th class="name">CHINA (SHANGHAI) INTERNATIONAL BOAT SHOW</th>
+        <th class="country">CHINE</th>
+        <th class="dates">26 AVRIL - 29 AVRIL 2017</th>
+        <th class="models">STAND / BOOTH</th>
+        <th class="link"><span></span></th>
+      </tr>
+      <tr class="special linked">
+        <th class="name">CHINA (SHANGHAI) INTERNATIONAL BOAT SHOW</th>
+        <th class="country">CHINE</th>
+        <th class="dates">26 AVRIL - 29 AVRIL 2017</th>
+        <th class="models">STAND / BOOTH</th>
+        <th class="link"><span></span></th>
+      </tr>
+      <tr class="special">
+        <th class="name">CHINA (SHANGHAI) INTERNATIONAL BOAT SHOW</th>
+        <th class="country">CHINE</th>
+        <th class="dates">26 AVRIL - 29 AVRIL 2017</th>
+        <th class="models">STAND / BOOTH</th>
+        <th class="link"><span></span></th>
+      </tr>
 
-                <li class="line">
-                    <span class="nom part">Nom événement</span>
-                    <span class="country part">France</span>
-                    <span class="date part">12 / 12 / 2016</span>
-                    <span class="boats part">
-                         <span class="partContent">
-                             <span class="boat">39</span>
-                             <span class="boat">46</span>
-                         </span>
-                    </span>
-                    <span class="app part"><div class="icon off"></div></span>
-                    <a href="edit-event.php" class="edit part"></a>
-                </li>
+      <tr class="linked">
+        <th class="name">CHINA (SHANGHAI) INTERNATIONAL BOAT SHOW</th>
+        <th class="country">CHINE</th>
+        <th class="dates">26 AVRIL - 29 AVRIL 2017</th>
+        <th class="models">STAND / BOOTH</th>
+        <th class="link"><span></span></th>
+      </tr>
 
-                <li class="line">
-                    <span class="nom part">Nom événement</span>
-                    <span class="country part">France</span>
-                    <span class="date part">12 / 04 / 2017</span>
-                    <span class="boats part">
-                         <span class="partContent">
-                             <span class="boat">39</span>
-                             <span class="boat">46</span>
-                         </span>
-                    </span>
-                    <span class="app part"><div class="icon on"></div></span>
-                    <a href="edit-event.php" class="edit part"></a>
-                </li>
+      <tr>
+        <th class="name">CHINA (SHANGHAI) INTERNATIONAL BOAT SHOW</th>
+        <th class="country">CHINE</th>
+        <th class="dates">26 AVRIL - 29 AVRIL 2017</th>
+        <th class="models">STAND / BOOTH</th>
+        <th class="link"><span></span></th>
+      </tr>
+      
+    </table>
+</div>
 
-                <li class="line">
-                    <span class="nom part">Nom événement</span>
-                    <span class="country part">France</span>
-                    <span class="date part">12 / 09 / 2016</span>
-                    <span class="boats part">
-                         <span class="partContent">
-                             <span class="boat">seventy 7</span>
-                         </span>
-                    </span>
-                    <span class="app part"><div class="icon on"></div></span>
-                    <a href="edit-event.php" class="edit part"></a>
-                </li>
+<div class="actu">
+    <article style="background: url('https://images.unsplash.com/photo-1444565329670-1b40df4b8d1d?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=') no-repeat center;">
+        <h2>ACTUALITÉ PRO</h2>
+        <span class="date">LE 12 MARS 2017 À 18h30</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>
+        <button>EN SAVOIR PLUS</button>
+    </article>
+     <article style="background: url('https://images.unsplash.com/photo-1444565329670-1b40df4b8d1d?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=') no-repeat center;">
+        <h2>ACTUALITÉ PRO</h2>
+        <span class="date">LE 12 MARS 2017 À 18h30</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>
+        <button>EN SAVOIR PLUS</button>
+    </article>
+</div>
 
-                <li class="line">
-                    <span class="nom part">Nom événement</span>
-                    <span class="country part">France</span>
-                    <span class="date part">12 / 12 / 2016</span>
-                    <span class="boats part">
-                         <span class="partContent">
-                             <span class="boat">380</span>
-                             <span class="boat">42</span>
-                             <span class="boat">51 s</span>
-                             <span class="boat">seventy 7</span>
-                         </span>
-                    </span>
-                    <span class="app part"><div class="icon off"></div></span>
-                    <a href="edit-event.php" class="edit part"></a>
-                </li>
-        </div>
+<div class="photo">
+    <article>
+        <h2>ACTUALITÉ PRO</h2>
+        <span class="date">LE 12 MARS 2017 À 18h30</span>
         
-    </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>
+   
+    </article>
+</div>
+
+
 <?php 
 include "footer.php";
 ?>

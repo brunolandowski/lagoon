@@ -1,3 +1,6 @@
+
+if (!document.getElementById("map-api")) {
+
 function initMap() {
 
         var locations = [
@@ -235,3 +238,4 @@ function initMap() {
     }
       
       }
+      
