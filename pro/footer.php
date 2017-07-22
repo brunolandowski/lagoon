@@ -16,8 +16,8 @@
         <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCQFIsX54fMBok823NMZvaGf9IowOU2u2g"></script>
         <script src="static/js/main.js"></script>
         <script src="static/js/slider.js"></script>
-        <script src="static/js/popup.js"></script>
         <script src="static/js/map.js"></script>
+        <script src="static/js/popup.js"></script>
         <?php            
             if( isset( $pageJS ) && !empty( $pageJS ) ){
                 if( is_array( $pageJS ) ){
