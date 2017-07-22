@@ -41,7 +41,7 @@ header {
 		    line-height: 100px;
 		    text-align: center;
 		    a {
-		    	height:105px;
+		    	height:140px;
 		    	display: inline-block;
 		    	width: 100px;
 		    	border-left: 1px solid #51596b;
@@ -49,7 +49,7 @@ header {
 		    	div {
 		    		width:40px;
 		    		height:40px;
-		    		margin-top:35px;
+		    		margin-top:45px;
 		    		margin-left:35px;
 		    		display: block;
 		    		&.alert {
@@ -105,7 +105,7 @@ header {
 			position: absolute;
 			left: 0; top: 0;
 			width: 160px;
-			height:105px;
+			height:140px;
 			list-style: none;
 			padding: 0; margin: 0;
 			z-index: 2;
@@ -157,6 +157,7 @@ header {
 						display: inline-block;
 						vertical-align: middle;
 						line-height: 16px;
+						margin-top:50px;
 
 						&:before {
 							display: block;
@@ -226,7 +227,11 @@ header {
 		.topBar {
 
 			height: 120px;
-
+			.right-nav {
+				a {
+					height:120px;
+				}
+			}
 			.logo {
 				width: 168px;
 				padding-top: 93px;
@@ -238,6 +243,13 @@ header {
 				width: 120px; height: 120px;
 				line-height: 120px;
 				font-size: 10.5px;
+			}
+		}
+
+		.langs {
+			height: 120px;
+			.lang.active .actived {
+				margin-top:35px;
 			}
 		}
 
@@ -261,6 +273,14 @@ header {
 		.topBar {
 			
 			height: 105px;
+			.right-nav {
+				a {
+					height:105px;
+					div {
+						margin-top:35px;
+					}
+				}
+			}
 			
 			.logo {
 				width: 144px;
@@ -272,6 +292,13 @@ header {
 				width: 105px; height: 105px;
 				line-height: 105px;
 				font-size: 9px;
+			}
+		}
+
+		.langs {
+			height:105px;
+			.lang.active .actived {
+				vertical-align: sub;
 			}
 		}
 
@@ -309,6 +336,10 @@ header {
 				line-height: 92px;
 			}
 		}
+		
+		.langs {
+			height:92px;
+		}
 
 		.nav {
 			li {
@@ -325,7 +356,14 @@ header {
 		.topBar {
 			
 			height: 73px;
-
+			.right-nav {
+				a {
+					height:73px;
+					div {
+						margin-top:20px;
+					}
+				}
+			}
 			.logo {
 				width: 102px;
 				padding-top: 55px;
@@ -334,6 +372,14 @@ header {
 			.logout {
 				height: 73px;
 				line-height: 73px;
+			}
+		}
+
+		.langs {
+			height:73px;
+			.lang.active .actived {
+				margin-top:20px;
+				height:73px;
 			}
 		}
 
