@@ -17,66 +17,70 @@ include "header.php";
             <h3>JUNE</h3>
             <span>21</span>
         </div>
-        <article>
-            <img src="https://images.unsplash.com/reserve/eBJIgrh3TCeHf7unLQ5e_sailing-5.jpg?dpr=2&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=">
+        <article style="background-image: url(https://images.unsplash.com/photo-1452065656801-6c60b6e7cbc5?dpr=2&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=);">
             <div class="sE_article_content">
-                <span>événements</span>
-                <h2>Convention Lagoon 2016</h2>
-                <button>EN SAVOIR PLUS</button>
+                <div class="inner">
+                     <span>événements</span>
+                    <h2>Convention Lagoon 2016</h2>
+                    <button>EN SAVOIR PLUS</button>
+                </div>
             </div>
         </article>
     </div>
 
     <div class="items" data-item="02">
         <aside>
-            <span>25</span>
+            <span>15</span>
         </aside>
         <div class="sE_header">
             <h3>JUNE</h3>
             <span>21</span>
         </div>
-        <article>
-            <img src="https://images.unsplash.com/photo-1452065656801-6c60b6e7cbc5?dpr=2&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=">
+        <article style="background-image: url(https://images.unsplash.com/photo-1497521749409-7b4d77f824d0?dpr=2&auto=format&fit=crop&w=1500&h=844&q=80&cs=tinysrgb&crop=);">
             <div class="sE_article_content">
-                <span>événements</span>
-                <h2>Convention Lagoon 2016</h2>
-                <button>EN SAVOIR PLUS</button>
+                 <div class="inner">
+                     <span>événements</span>
+                    <h2>Salon du Yacht</h2>
+                    <button>EN SAVOIR PLUS</button>
+                </div>
             </div>
         </article>
     </div>
 
     <div class="items" data-item="03">
         <aside>
-            <span>25</span>
+            <span>9</span>
         </aside>
         <div class="sE_header">
             <h3>JUNE</h3>
             <span>21</span>
         </div>
-        <article>
-            <img src="https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=">
+        <article style="background-image: url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
             <div class="sE_article_content">
-                <span>événements</span>
-                <h2>Convention Lagoon 2016</h2>
-                <button>EN SAVOIR PLUS</button>
+                 <div class="inner">
+                     <span>événements</span>
+                    <h2>Convention Monaco 2017</h2>
+                    <button>EN SAVOIR PLUS</button>
+                </div>
             </div>
         </article>
     </div>
 
     <div class="items" data-item="04">
         <aside>
-            <span>25</span>
+            <span>7</span>
         </aside>
         <div class="sE_header">
             <h3>JUNE</h3>
             <span>21</span>
         </div>
-        <article>
-            <img src="static/img/common/likefacebook/pro_v3_03.jpg">
+        <article style="background-image: url(https://images.unsplash.com/photo-1480742444427-f4bb0573e315?dpr=2&auto=format&fit=crop&w=1500&h=842&q=80&cs=tinysrgb&crop=);">
             <div class="sE_article_content">
-                <span>événements</span>
-                <h2>Convention Lagoon 2016</h2>
-                <button>EN SAVOIR PLUS</button>
+                 <div class="inner">
+                     <span>événements</span>
+                    <h2>Nos nouveaux modèles</h2>
+                    <button>EN SAVOIR PLUS</button>
+                </div>
             </div>
         </article>
     </div>
@@ -85,11 +89,12 @@ include "header.php";
 
 <div class="popup" data-item="01">
       <div class="items">
-        <article>
-            <img src="static/img/common/likefacebook/pro_v3_03.jpg">
+        <article style="background-image: url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop);">
             <div class="pU_article_content">
-                <span>événements</span>
-                <h2>Convention Lagoon 2016</h2>
+                <div class="inner">
+                    <span>événements</span>
+                    <h2>Convention Lagoon 2016</h2>
+                </div>
             </div>
         </article>
         
@@ -133,11 +138,12 @@ include "header.php";
 
 <div class="popup" data-item="02">
       <div class="items">
-        <article>
-            <img src="static/img/common/likefacebook/pro_v3_03.jpg">
+         <article style="background-image:url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop);">
             <div class="pU_article_content">
-                <span>événements</span>
-                <h2>Convention Lagoon 2016</h2>
+                <div class="inner">
+                    <span>événements</span>
+                    <h2>Salon du Yacht</h2>
+                </div>
             </div>
         </article>
         
@@ -181,11 +187,12 @@ include "header.php";
 
 <div class="popup" data-item="03">
       <div class="items">
-        <article>
-            <img src="static/img/common/likefacebook/pro_v3_03.jpg">
+        <article style="background-image: url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop)">
             <div class="pU_article_content">
-                <span>événements</span>
-                <h2>Convention Lagoon 2016</h2>
+                <div class="inner">
+                    <span>événements</span>
+                    <h2>Convention Lagoon 2016</h2>
+                </div>
             </div>
         </article>
         
@@ -229,11 +236,12 @@ include "header.php";
 
 <div class="popup" data-item="04">
       <div class="items">
-        <article>
-            <img src="static/img/common/likefacebook/pro_v3_03.jpg">
+         <article style="background-image: url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop);">
             <div class="pU_article_content">
-                <span>événements</span>
-                <h2>Convention Lagoon 2016</h2>
+                <div class="inner">
+                    <span>événements</span>
+                    <h2>Convention Lagoon 2016</h2>
+                </div>
             </div>
         </article>
         

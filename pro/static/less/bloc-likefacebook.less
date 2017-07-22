@@ -29,7 +29,7 @@
 		}
 		article {
 			overflow:hidden;
-			
+			background:#6f747f;
 			width:640px;
 			height:360px;
 			background-size: cover;
@@ -37,47 +37,56 @@
 			img {
 				transition: all 1s ease;
 				width:100%;
+				opacity:.8;
 			}
 			.sE_article_content {
-				
+				height:360px;
+				box-shadow: inset 0px -200px 200px rgba(0,0,0,0.75);
 				text-transform: uppercase;
 				text-align: center;
 				width:640px;
 				bottom:80px;
 				position: absolute;
 				color:white;
-				span {
-					padding-bottom:10px;
-					border-bottom:1px solid #fff;
-					margin:0 auto;
-					display:block;
-					width:225px;
-					font-size:10px;
-					font-weight: 500;
-					color:#52d2d4;
+				.inner {
+					position:absolute;
+					bottom:40px;
+					width:100%;
+
+					span {
+						padding-bottom:10px;
+						border-bottom:1px solid #fff;
+						margin:0 auto;
+						display:block;
+						width:225px;
+						font-size:10px;
+						font-weight: 500;
+						color:#52d2d4;
+					}
+					h2 {
+						font-size:20px;
+						margin:10px 40px 20px 40px;
+						font-weight:400;
+					}
+					button {
+						
+					    height: 40px;
+					    line-height: 40px;
+					    background-color: #00adbb;
+					    font-family: "Open Sans";
+					    font-weight: 400;
+					    font-size: 13px;
+					    color: #ffffff;
+					    text-transform: uppercase;
+					    border-width: 0px;
+					    border-style: initial;
+					    border-color: initial;
+					    border-image: initial;
+					    padding: 0px 40px;
+					    border-radius: 3px;
+					}
 				}
-				h2 {
-					font-size:20px;
-					margin:10px 40px 40px 40px;
-					font-weight:400;
-				}
-				button {
-					margin-bottom:50px;
-				    height: 40px;
-				    line-height: 40px;
-				    background-color: #00adbb;
-				    font-family: "Open Sans";
-				    font-weight: 400;
-				    font-size: 13px;
-				    color: #ffffff;
-				    text-transform: uppercase;
-				    border-width: 0px;
-				    border-style: initial;
-				    border-color: initial;
-				    border-image: initial;
-				    padding: 0px 40px;
-				    border-radius: 3px;
-				}
+				
 			}
 		}
 		aside {
@@ -119,25 +128,34 @@
 	overflow-y:scroll;
 	.items {
 		width:700px;
-		
 		background:white;
 		margin:50px auto;
 		padding:20px;
 		article {
 			font-family: 'Lagoon-semi';
+			height:360px;
+			width:660px;
+			background-size: cover;
 			img {
 				transition: all 1s ease;
 				width:100%;
-				
 				
 			}
 			.pU_article_content {
 				
 				text-transform: uppercase;
 				text-align: center;
-				margin-top:-150px;
-				margin-bottom:110px;
 				color:white;
+				box-shadow: inset 0px -100px 150px rgba(0,0,0,0.75);
+				width:660px;
+				height:360px;
+				position:relative;
+				.inner {
+					width:100%;
+					bottom:0px;
+					position: absolute;
+					z-index:999;
+				}
 				span {
 					padding-bottom:10px;
 					border-bottom:1px solid #fff;
@@ -150,7 +168,7 @@
 				}
 				h2 {
 					font-size:20px;
-					margin:10px 40px 70px 40px;
+					margin:10px 40px 40px 40px;
 					font-weight:400;
 				}
 			}
