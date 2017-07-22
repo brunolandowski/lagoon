@@ -284,6 +284,149 @@ include "header.php";
     </article>
 </div>
 
+<div class="offer">
+    <h2>DÉLAIS DE LIVRAISON & STOCK</h2>
+    <div class="cat">
+        <h3>Voiliers</h3>
+        <article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article>
+    </div>
+
+       <div class="cat">
+        <h3>Voiliers</h3>
+        <article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article><!--
+        --><article>
+            <h4>380</h4>
+            <span class="stock">Stock</span>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <p>2 cabines / 2 toilettes : 6</p>
+            <span class="delay">
+                <img src="static/img/common/likefacebook/chrono.png">
+                <p>JUIN</p>
+                <p>2017</p>
+            </span>
+        </article>
+    </div>
+</div>
+
 <div class="stock-prices">
     <article>
         <img src="static/img/common/likefacebook/stock.png">
