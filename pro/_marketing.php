@@ -1,6 +1,6 @@
 <?php 
 
-$pageCSS = 'marketing.css';
+$pageCSS = '_marketing.css';
 $className = 'marketing';
 
 include "header.php";

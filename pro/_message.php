@@ -1,6 +1,6 @@
 <?php 
 
-$pageCSS = 'message.css';
+$pageCSS = '_message.css';
 $className = 'message';
 
 include "header.php";

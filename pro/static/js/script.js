@@ -80,7 +80,8 @@ $( ".actu .popuplaunch .items button" ).click(function() {
 
 $( ".popup" ).click(function() {
    $(this).fadeOut();
-   $("body").css("overflow","scroll");
+   $("body").css("overflowY","scroll");
+   $("body").css("overflowX","hidden");
   });
 
   $(".popup").on('click', ':not(.items)', function (e) {

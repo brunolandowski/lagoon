@@ -1,6 +1,6 @@
 <?php 
 
-$pageCSS = 'actu.css';
+$pageCSS = '_actu.css';
 $className = 'actu';
 
 include "header.php";

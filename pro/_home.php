@@ -1,6 +1,6 @@
 <?php 
 
-$pageCSS = 'home.css';
+$pageCSS = '_home.css';
 
 $className = 'home';
 
@@ -8,7 +8,6 @@ include "header.php";
 ?>
 
 <div class="loader">
-   chargement...
    <span></span>
 </div>
 
@@ -313,7 +312,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -324,7 +323,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -335,7 +334,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -346,7 +345,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -357,7 +356,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -368,7 +367,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -383,7 +382,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -394,7 +393,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -405,7 +404,7 @@ include "header.php";
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
             <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
+                <img src="static/img/common/home/chrono.png">
                 <p>JUIN</p>
                 <p>2017</p>
             </span>
@@ -415,13 +414,13 @@ include "header.php";
 
 <div class="stock-prices">
     <article>
-        <img src="static/img/common/likefacebook/stock.png">
+        <img src="static/img/common/home/stock.png">
         <h2>BATEAUX EN STOCK</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>
         <button>ALLER SUR LASSY</button>
     </article>
      <article>
-        <img src="static/img/common/likefacebook/tarifs.png">
+        <img src="static/img/common/home/tarifs.png">
         <h2>TARIFS</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>
         <button>VOIR LES TARIFS</button>

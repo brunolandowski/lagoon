@@ -1,6 +1,6 @@
 <?php 
 
-$pageCSS = 'reseller.css';
+$pageCSS = '_reseller.css';
 $className = 'reseller';
 
 include "header.php";

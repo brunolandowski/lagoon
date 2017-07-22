@@ -9,15 +9,15 @@ include "header.php";
 <div class="lateral-list">
     
     <ul>
-        <a href=""><li class="folder"><img src="">pack électroniques</li></a>
-        <a href=""><li class="folder"><img src="">selleries</li></a>
-        <a href=""><li class="folder active"><img src="">specs bois</li></a>
-        <a href=""><li class="folder"><img src="">kit mouillage</li></a>
-        <a href=""><li class="folder"><img src="">fiches d'essais</li></a>
-        <a href=""><li class="folder"><img src="">messures diverses</li></a>
-        <a href=""><li class="folder"><img src="">guides d'utilisation</li></a>
-        <a href=""><li class="folder"><img src="">manuel ce</li></a>
-        <a href=""><li class="folder"><img src="">icnn</li></a>
+        <a href=""><li class="folder">pack électroniques</li></a>
+        <a href=""><li class="folder">selleries</li></a>
+        <a href=""><li class="folder active">specs bois</li></a>
+        <a href=""><li class="folder">kit mouillage</li></a>
+        <a href=""><li class="folder">fiches d'essais</li></a>
+        <a href=""><li class="folder">messures diverses</li></a>
+        <a href=""><li class="folder">guides d'utilisation</li></a>
+        <a href=""><li class="folder">manuel ce</li></a>
+        <a href=""><li class="folder">icnn</li></a>
     </ul>
 </div>
 

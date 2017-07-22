@@ -1,6 +1,6 @@
 <?php 
 
-$pageCSS = 'team.css';
+$pageCSS = '_team.css';
 $className = 'team';
 
 include "header.php";

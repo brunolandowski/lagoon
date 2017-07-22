@@ -1,6 +1,6 @@
 <?php 
 
-$pageCSS = 'events.css';
+$pageCSS = '_events.css';
 $className = 'events';
 
 include "header.php";
