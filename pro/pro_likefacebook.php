@@ -89,7 +89,7 @@ include "header.php";
 
 <div class="popup" data-item="01">
       <div class="items">
-        <article style="background-image: url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop);">
+        <article style="background-image: url(https://images.unsplash.com/photo-1452065656801-6c60b6e7cbc5?dpr=2&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=);">
             <div class="pU_article_content">
                 <div class="inner">
                     <span>événements</span>
@@ -138,7 +138,7 @@ include "header.php";
 
 <div class="popup" data-item="02">
       <div class="items">
-         <article style="background-image:url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop);">
+         <article style="background-image:url(https://images.unsplash.com/photo-1497521749409-7b4d77f824d0?dpr=2&auto=format&fit=crop&w=1500&h=844&q=80&cs=tinysrgb&crop=);">
             <div class="pU_article_content">
                 <div class="inner">
                     <span>événements</span>
@@ -187,11 +187,11 @@ include "header.php";
 
 <div class="popup" data-item="03">
       <div class="items">
-        <article style="background-image: url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop)">
+        <article style="background-image: url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
             <div class="pU_article_content">
                 <div class="inner">
                     <span>événements</span>
-                    <h2>Convention Lagoon 2016</h2>
+                    <h2>Convention Monaco 2017</h2>
                 </div>
             </div>
         </article>
@@ -236,11 +236,11 @@ include "header.php";
 
 <div class="popup" data-item="04">
       <div class="items">
-         <article style="background-image: url(https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop);">
+         <article style="background-image: url(https://images.unsplash.com/photo-1480742444427-f4bb0573e315?dpr=2&auto=format&fit=crop&w=1500&h=842&q=80&cs=tinysrgb&crop=);">
             <div class="pU_article_content">
                 <div class="inner">
                     <span>événements</span>
-                    <h2>Convention Lagoon 2016</h2>
+                    <h2>Nos nouveaux modèles</h2>
                 </div>
             </div>
         </article>
@@ -314,7 +314,7 @@ include "header.php";
             </span>
         </article><!--
         --><article>
-            <h4>380</h4>
+            <h4>39</h4>
             <span class="stock">Stock</span>
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
@@ -325,7 +325,7 @@ include "header.php";
             </span>
         </article><!--
         --><article>
-            <h4>380</h4>
+            <h4>400</h4>
             <span class="stock">Stock</span>
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
@@ -336,7 +336,7 @@ include "header.php";
             </span>
         </article><!--
         --><article>
-            <h4>380</h4>
+            <h4>40</h4>
             <span class="stock">Stock</span>
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
@@ -347,7 +347,7 @@ include "header.php";
             </span>
         </article><!--
         --><article>
-            <h4>380</h4>
+            <h4>42</h4>
             <span class="stock">Stock</span>
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
@@ -358,7 +358,7 @@ include "header.php";
             </span>
         </article><!--
         --><article>
-            <h4>380</h4>
+            <h4>450F</h4>
             <span class="stock">Stock</span>
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
@@ -371,9 +371,9 @@ include "header.php";
     </div>
 
        <div class="cat">
-        <h3>Voiliers</h3>
+        <h3>MotorYachts</h3>
         <article>
-            <h4>380</h4>
+            <h4>560</h4>
             <span class="stock">Stock</span>
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
@@ -384,7 +384,7 @@ include "header.php";
             </span>
         </article><!--
         --><article>
-            <h4>380</h4>
+            <h4>620</h4>
             <span class="stock">Stock</span>
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
@@ -395,40 +395,7 @@ include "header.php";
             </span>
         </article><!--
         --><article>
-            <h4>380</h4>
-            <span class="stock">Stock</span>
-            <p>2 cabines / 2 toilettes : 6</p>
-            <p>2 cabines / 2 toilettes : 6</p>
-            <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
-                <p>JUIN</p>
-                <p>2017</p>
-            </span>
-        </article><!--
-        --><article>
-            <h4>380</h4>
-            <span class="stock">Stock</span>
-            <p>2 cabines / 2 toilettes : 6</p>
-            <p>2 cabines / 2 toilettes : 6</p>
-            <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
-                <p>JUIN</p>
-                <p>2017</p>
-            </span>
-        </article><!--
-        --><article>
-            <h4>380</h4>
-            <span class="stock">Stock</span>
-            <p>2 cabines / 2 toilettes : 6</p>
-            <p>2 cabines / 2 toilettes : 6</p>
-            <span class="delay">
-                <img src="static/img/common/likefacebook/chrono.png">
-                <p>JUIN</p>
-                <p>2017</p>
-            </span>
-        </article><!--
-        --><article>
-            <h4>380</h4>
+            <h4>Seventy 7</h4>
             <span class="stock">Stock</span>
             <p>2 cabines / 2 toilettes : 6</p>
             <p>2 cabines / 2 toilettes : 6</p>
@@ -457,7 +424,7 @@ include "header.php";
 </div>
 
 <div class="organize">
-    <article style="background-image: url('');">
+    <article style="background-image: url(https://images.unsplash.com/photo-1480364665315-78fd10380cda?dpr=2&auto=format&fit=crop&w=1500&h=1032&q=80&cs=tinysrgb&crop=)">
         <h2>ORGANISER VOS ÉVÈNEMENTS</h2>
         <p>Passez des commandes d'accessoires pour vos stand sur la boutique</p>
         <button>VOIR LES ÉLÉMENTS</button>

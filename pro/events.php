@@ -7,10 +7,10 @@ include "header.php";
 ?>
 
 <div class="organize">
-    <article style="background: url('https://images.unsplash.com/photo-1499403474843-04e72c14df8e?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=') no-repeat center;">
+    <article style="background-image: url(https://images.unsplash.com/photo-1480364665315-78fd10380cda?dpr=2&auto=format&fit=crop&w=1500&h=1032&q=80&cs=tinysrgb&crop=)">
         <h2>ORGANISER VOS ÉVÈNEMENTS</h2>
         <p>Passez des commandes d'accessoires pour vos stand sur la boutique</p>
-        <button>VOIR TOUS LES TARIFS</button>
+        <button>VOIR LES ÉLÉMENTS</button>
     </article>
 </div>
 
@@ -87,13 +87,13 @@ include "header.php";
 </div>
 
 <div class="actu">
-    <article style="background: url('https://images.unsplash.com/photo-1444565329670-1b40df4b8d1d?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=') no-repeat center;">
+    <article style="background-image: url(https://images.unsplash.com/photo-1474699036564-9ac296ab08b2?dpr=2&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=);">
         <h2>ACTUALITÉ PRO</h2>
         <span class="date">LE 12 MARS 2017 À 18h30</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>
         <button>EN SAVOIR PLUS</button>
     </article>
-     <article style="background: url('https://images.unsplash.com/photo-1444565329670-1b40df4b8d1d?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=') no-repeat center;">
+     <article style="background-image: url(https://images.unsplash.com/photo-1444565329670-1b40df4b8d1d?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=);">
         <h2>ACTUALITÉ PRO</h2>
         <span class="date">LE 12 MARS 2017 À 18h30</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sodales pellentesque. Ut posuere rhoncus tellus ut dictum. Proin quis aliquam velit. Nam id lacus feugiat, malesuada augue quis, bibendum nulla. Quisque in elit a nibh efficitur varius eu et eros. Maecenas odio enim, posuere at porttitor vitae, volutpat in quam.</p>

@@ -10,6 +10,10 @@
 		width:calc(~'50% - 20px');
 		padding:30px;
 		vertical-align:top;
+		background:#50555f;
+		background-position: center middle;
+    	background-size: cover;
+    	background-blend-mode: overlay;
 		&:nth-child(2) {
 			margin-left:30px;
 		}
@@ -273,11 +277,10 @@
 }
 
 .organize {
-	margin:0px;
-
+	
 	article {
-		background-size: 100%;
-		background:#595e67;
+		position:relative;
+		background:#90a0bd;
 		text-align: center;
 		border-bottom: 1px solid rgb(217, 217, 217);
 		display:inline-block;
@@ -285,14 +288,13 @@
 		width:100%;
 		padding:60px 30px;
 		vertical-align:top;
-		&:nth-child(2) {
-			margin-left:30px;
-		}
+		background-position: center middle;
+    	background-size: cover;
+    	background-blend-mode: multiply;
 		h2 {
 			font-family: 'Lagoon-semi';
 			font-size:26px;
 			font-weight: 100;
-			
 			margin-bottom: 10px;
 		}
 		
@@ -318,5 +320,7 @@
 		    color: #FFF;
 		    text-transform: uppercase;
 		}
+		
+		
 	}
 }
