@@ -5,18 +5,18 @@
             <div class="topBar">
                 <a href="" class="logo">PRO</a>
                 <span class="right-nav">
-                    <a href="index.php"><div class="alert"><span>5</span></div></a>
-                    <a href="index.php"><div class="message"><span>12</span></div></a>
-                    <a href="index.php"><div class="user"></div></a>
+                    <a href="_home.php"><div class="alert"><span>5</span></div></a>
+                    <a href="_home.php"><div class="message"><span>12</span></div></a>
+                    <a href="_home.php"><div class="user"></div></a>
                 </span>
                 
 
             </div>
             <ul class="nav">
                 <li class='active'><a href="home.php">ACCUEIL</a></li>
-                <li><a href="#">INFOS TEHNIQUES</a></li>
-                <li><a href="#">ÉVÉNEMENTS</a></li>
-                <li><a href="#">SUPPORTS MARKETING</a></li>
+                <li><a href="_specs.php">INFOS TECHNIQUES</a></li>
+                <li><a href="_home.php">ÉVÉNEMENTS</a></li>
+                <li><a href="_home.php">SUPPORTS MARKETING</a></li>
                 <li><a href="#">SERVICES CLIENT</a></li>
             </ul>
             <ul class="langs">

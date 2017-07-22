@@ -25,10 +25,9 @@
 			.peopleimg {
 				background:#333;
 				border-radius: 50px;
-				height:100px;
-				width:100px;
-				display: inline-block;
-				float:left;
+				height:70px;
+				width:70px;
+				display: inline-block; 
 			}
 			.people {
 				border-bottom: 1px solid rgb(217, 217, 217);
@@ -40,7 +39,23 @@
 					line-height:1.4;
 					font-family: 'Lagoon-semi', arial;
 				}
+				.contacts {
+					margin-top:10px;
+					
+					.call {
+						float:inherit;
+							
+						.mail {
+							font-size: 13px;
+						    font-family: "Lato";
+						    font-weight: 700;
+						}
+						
+					}
+				}
 				article {
+					margin-top: 15px;
+					vertical-align: top;
 					margin-left:20px;
 					display: inline-block;
 					width:calc(~'100% - 130px');
@@ -61,19 +76,7 @@
 					    line-height: 14px;
 					    margin: 0;
 					}
-					.contacts {
-						margin-top:10px;
-						.call {
-							float:inherit;
-							
-							.mail {
-								font-size: 13px;
-							    font-family: "Lato";
-							    font-weight: 700;
-							}
-							
-						}
-					}
+					
 				}
 			}
 		}
