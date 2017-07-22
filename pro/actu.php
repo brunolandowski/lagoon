@@ -28,9 +28,9 @@ include "header.php";
             </div>
             <div class="right">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="product"></li>
+                    <li class="technique"></li>
+                    <li class="communication"></li>
                 </ul>
                 <button>EN SAVOIR PLUS</button>   
             </div>
@@ -44,9 +44,9 @@ include "header.php";
             </div>
             <div class="right">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="product"></li>
+                    <li class="technique"></li>
+                    <li class="commercial"></li>
                 </ul>
                 <button>EN SAVOIR PLUS</button>   
             </div>
@@ -60,9 +60,9 @@ include "header.php";
             </div>
             <div class="right">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="product"></li>
+                    <li class="technique"></li>
+                    <li class="communication"></li>
                 </ul>
                 <button>EN SAVOIR PLUS</button>   
             </div>
@@ -85,9 +85,9 @@ include "header.php";
       <div class="items">
         <article>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="product"></li>
+                <li class="technique"></li>
+                <li class="communication"></li>
             </ul>
             <h2>ACTUALITÉ PRO NUMÉRO 1</h2>
             <span class="date">LE 12 MARS 2017 À 16h30</span>
@@ -124,9 +124,9 @@ include "header.php";
       <div class="items">
         <article>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="product"></li>
+                <li class="technique"></li>
+                <li class="communication"></li>
             </ul>
             <h2>ACTUALITÉ PRO NUMÉRO 1</h2>
             <span class="date">LE 12 MARS 2017 À 16h30</span>
@@ -163,9 +163,9 @@ include "header.php";
       <div class="items">
         <article>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="product"></li>
+                <li class="technique"></li>
+                <li class="communication"></li>
             </ul>
             <h2>ACTUALITÉ PRO NUMÉRO 1</h2>
             <span class="date">LE 12 MARS 2017 À 16h30</span>

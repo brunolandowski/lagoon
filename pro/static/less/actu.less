@@ -23,7 +23,6 @@
 			background:white;
 			border-bottom: 1px solid rgb(217, 217, 217);
 			.right {
-				
 				ul {
 					position:absolute;
 					right:30px;
@@ -34,7 +33,10 @@
 						height:50px;
 						width:50px;
 						border-radius: 25px;
-						background:red;
+						&.communication {background: #f39c11 url("../img/common/actu/communication-icon.png") no-repeat center;background-size: 30px;}
+						&.commercial {background: #2dcc70 url("../img/common/actu/commercial-icon.png") no-repeat center;background-size: 30px;}
+						&.product {background: #0177b8 url("../img/common/actu/product-icon.png") no-repeat center;background-size: 30px;}
+						&.technique {background: #fb1716 url("../img/common/actu/technique-icon.png") no-repeat center;background-size: 30px;}
 					}
 				}
 				button {
@@ -89,7 +91,7 @@
 
 
 .popup {
-	z-index:9;
+	z-index:2;
 	display: none;
 	background: rgba( 0, 0, 0, 0.5);
 	position:fixed;
@@ -114,7 +116,11 @@
 				    height: 50px;
 				    width: 50px;
 				    border-radius: 25px;
-				    background: red;
+				    &.communication {background: #f39c11 url("../img/common/actu/communication-icon.png") no-repeat center;background-size: 30px;}
+					&.commercial {background: #2dcc70 url("../img/common/actu/commercial-icon.png") no-repeat center;background-size: 30px;}
+					&.product {background: #0177b8 url("../img/common/actu/product-icon.png") no-repeat center;background-size: 30px;}
+					&.technique {background: #fb1716 url("../img/common/actu/technique-icon.png") no-repeat center;background-size: 30px;}
+					
 				}
 			}
 			h2 {
